@@ -8,16 +8,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [`gatsby-remark-smartypants`],
+        plugins: [
+          `gatsby-remark-smartypants`,
+          `gatsby-remark-responsive-iframe`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-images`,
+        ],
       },
     },
     `gatsby-transformer-sharp`,
@@ -39,6 +37,12 @@ module.exports = {
       options: {
         name: `pages`,
         path: `${__dirname}/src/pages/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images/`,
       },
     },
     `gatsby-plugin-mdx`,
