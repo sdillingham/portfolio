@@ -3,7 +3,7 @@ module.exports = {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
-    siteUrl: "http://sean.dillingh.am",
+    siteUrl: `http://sean.dillingh.am`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -32,6 +32,15 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-web-font-loader`,
+        options: {
+          custom: {
+            families: [`apercu-mono-pro, apercu-pro, canela`],
+            urls: [`/src/fonts/fonts.css`],
+          },
+        },
+      },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
