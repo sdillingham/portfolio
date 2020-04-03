@@ -49,6 +49,7 @@ module.exports = {
         head: false,
       },
     },
+    `gatsby-plugin-theme-ui`,
     `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
