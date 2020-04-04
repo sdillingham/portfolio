@@ -20,4 +20,4 @@ For those who know Joseph Campbell’s work on mythology, please excuse a couple
 
 > “The basic motif of the hero journey [is] leaving one condition, finding the source of life to bring you forth in a richer or more mature or other condition.“
 
-Campbell identified the hero's journey as a common template across all mythological traditions. It's an archetype that helps illuminate a path for humanity to follow when faced with inevitable challenges. Following the path of the hero's journey transforms our fear into a a state of heightened connectedness and fullness of potential.
+Campbell identified the hero's journey as a common template across all mythological traditions. It's an archetype that helps illuminate a path for humanity to follow when faced with inevitable challenges. Following the path of the hero's journey transforms our fear into a state of heightened connectedness and fullness of potential.
