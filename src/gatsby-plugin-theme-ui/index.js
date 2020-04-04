@@ -54,9 +54,4 @@ export default {
   breakpoints: [
     '768px', '1025px', '1356px'
   ],
-  mediaQueries: {
-    small: '@media screen and (min-width: ${breakpoints[0]})',
-    medium: '@media screen and (min-width: ${breakpoints[1]})',
-    large: '@media screen and (min-width: ${breakpoints[2]})',
-  }
 }

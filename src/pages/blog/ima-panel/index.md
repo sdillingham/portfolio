@@ -1,8 +1,9 @@
 ---
 path: "/blog/responsive-design-panel-at-ima"
 date: "2013-03-08"
+content-type: "article"
 title: "Speaking: Responsive Design Panel at iMA"
-teaser: "Slides from my talk at the responsive design panel at the 2013 iMA Conference in Austin, TX."
+teaser: "Slides from my talk at the responsive design panel at the 2013 iMA Conference in Austin, TX"
 ---
 
 I had the privilege of participating in a panel on responsive web design at this year's iMA conference in Austin, TX. The panel, organized by [Jack Brighton](https://twitter.com/jackbrighton) from WILL, also featured two fntastic web developers: [Erik Golts](https://twitter.com/egolts) from OPB and consultant [Sean Stewart](http://www.seankstewart.com/).

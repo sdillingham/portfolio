@@ -1,8 +1,9 @@
 ---
 path: "/blog/using-audience-signals-to-validate-product-ideas"
 date: "2013-12-22"
+content-type: "article"
 title: "KPCC for iPad: rapidly validating product and editorial ideas"
-teaser: "We ran a remote A/B test with a sample population of our current audience, presenting them with four versions of a landing promoting our upcoming app"
+teaser: "Runninga remote A/B landing page tests to help guide product strategy"
 ---
 
 KPCC's new [iPad app](https://itunes.apple.com/us/app/kpcc-for-ipad/id744160424?mt=8) is approaching its 30th day in the App Store, and its reception so far is encouraging. We've had 90%+ 5-star ratings in the App Store, promising engagement metrics, and even some [positive press in Nieman Lab](http://www.niemanlab.org/2013/12/the-newsonomics-of-public-radios-all-in-one-tablet-strategy/).

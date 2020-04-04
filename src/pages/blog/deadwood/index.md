@@ -1,8 +1,9 @@
 ---
 path: "/blog/deadwood-the-golden-age-of-news-devs"
 date: "2013-08-13"
+content-type: "article"
 title: "Deadwood, The Golden Age of News Devs"
-teaser: "It's a great time to be a designer or developer working in a newsroom. The profession is vibrant and thriving, in part because it's allowed to experiment, fail, and live on the edge of chaos."
+teaser: "It's a great time to be a designer or developer working in a newsroom"
 ---
 
 ![I wouldn’t trust a man who wouldn’t try to steal a little..](./deadwood.jpg)

@@ -1,8 +1,9 @@
 ---
 path: "/blog/kpcc-wins-six-editor-and-publisher-awards"
 date: "2013-11-06"
+content-type: "article"
 title: "KPCC wins six Editor & Publisher awards"
-teaser: "I'm delighted to share the news that KPCC took home awards for all six of our EPPY nominations, a milestone achievement for the digital editorial and product teams at the station."
+teaser: "KPCC took home awards for all six of our EPPY nominations, a milestone achievement for the digital editorial and product teams at the station"
 ---
 
 I'm delighted to share the news that [KPCC took home awards for all six of our EPPY nominations](http://www.scpr.org/news/2013/10/30/40106/kpcc-takes-home-6-eppy-awards/) this year. I'm so proud of the work of all the talented individuals involved.
