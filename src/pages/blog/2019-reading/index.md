@@ -1,8 +1,8 @@
 ---
 path: "/blog/2019-reading"
 date: "2019-12-30"
-content-type: "notes"
-title: "Notes: 2019 Reading
+contentType: "notes"
+title: "Notes: 2019 Reading"
 teaser: "My list of recommended reads for 2019"
 ---
 

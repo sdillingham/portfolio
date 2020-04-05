@@ -1,7 +1,7 @@
 ---
 path: "/blog/deadwood-the-golden-age-of-news-devs"
 date: "2013-08-13"
-content-type: "article"
+contentType: "article"
 title: "Deadwood, The Golden Age of News Devs"
 teaser: "It's a great time to be a designer or developer working in a newsroom"
 ---

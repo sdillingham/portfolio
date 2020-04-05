@@ -1,7 +1,7 @@
 ---
 path: "/blog/the-emotional-side-of-people-management"
 date: "2019-08-08"
-content-type: "notes"
+contentType: "notes"
 title: "Notes: The Emotional Side of People Management"
 teaser: "Some random thoughts on the parts of managing people that we don't talk about enough"
 ---

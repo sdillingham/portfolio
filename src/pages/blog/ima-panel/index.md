@@ -1,7 +1,7 @@
 ---
 path: "/blog/responsive-design-panel-at-ima"
 date: "2013-03-08"
-content-type: "article"
+contentType: "article"
 title: "Speaking: Responsive Design Panel at iMA"
 teaser: "Slides from my talk at the responsive design panel at the 2013 iMA Conference in Austin, TX"
 ---

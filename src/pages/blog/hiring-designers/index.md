@@ -1,7 +1,7 @@
 ---
 path: "/blog/on-hiring-designers"
 date: "2020-02-27"
-content-type: "notes"
+contentType: "notes"
 title: "Notes: On Hiring Designers"
 teaser: "Some lessons I learned and wrote down while building product design teams"
 ---

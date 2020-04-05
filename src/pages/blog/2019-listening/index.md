@@ -1,8 +1,8 @@
 ---
 path: "/blog/2019-listening"
 date: "2019-12-30"
-content-type: "notes"
-title: "Notes: 2019 Listening
+contentType: "notes"
+title: "Notes: 2019 Listening"
 teaser: "Albums and live shows I loved in 2019"
 ---
 

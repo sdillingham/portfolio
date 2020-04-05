@@ -1,7 +1,7 @@
 ---
 path: "/blog/using-audience-signals-to-validate-product-ideas"
 date: "2013-12-22"
-content-type: "article"
+contentType: "article"
 title: "KPCC for iPad: rapidly validating product and editorial ideas"
 teaser: "Runninga remote A/B landing page tests to help guide product strategy"
 ---
