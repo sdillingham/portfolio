@@ -1,0 +1,28 @@
+.profilePic {
+    height: 100vh;
+    overflow: hidden;
+    top:0;
+}
+.homeHeading {
+    color: var(--color-gray-0);
+    font-family: var(--fontFamily-sans);
+    font-size: var(--fontSize-10);
+    font-weight: var(--fontWeight-bold);
+    line-height: var(--lineHeight-tight);
+}
+
+.homeSubhead, .homeDescription {
+    color: var(--color-gray-1);
+    font-family: var(--fontFamily-serif);
+    font-weight: var(--fontWeight-normal);
+}
+
+.homeSubhead {
+    font-size: var(--fontSize-5);
+    line-height: var(--lineHeight-standard);
+}
+
+.homeDescription {
+    font-size: var(--fontSize-2);
+    line-height: var(--lineHeight-generous);
+}

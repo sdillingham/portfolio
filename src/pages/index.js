@@ -1,20 +1,23 @@
 import React from "react"
 import { Link } from "gatsby"
+import profile from "../images/img-profile.jpg"
+import "./constants.css"
+import "./index.css"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div className="profilePic">
+      <img src={profile} />
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+
+    <h1 className="homeHeading">Sean Dillingham</h1>
+    <p className="homeSubhead">I'm a design leader based in Los Angeles. I build teams, design products, and write code.</p>
+    <p className="homeDescription">I've been designing professionally since 2001. I'm passionate about leading teams, building design systems, and creating tools that help people get meaningful work done.</p>
+
   </Layout>
 )
 

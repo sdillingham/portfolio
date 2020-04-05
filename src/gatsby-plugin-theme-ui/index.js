@@ -22,7 +22,7 @@ export default {
     ],
   },
   fonts: {
-    mono: 'apercu-mono-pro',
+    mono: 'apercu-mono-pro, monospace',
     sans: 'apercu-pro, sans-serif',
     serif: 'canela, serif',
   },

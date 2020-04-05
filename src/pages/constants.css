@@ -1,0 +1,75 @@
+:root {
+
+  /* colors */
+  --color-han-0: #3F39C1;
+
+  --color-slate-0: #A7A3FF;
+  --color-slate-1: #8A85FF;
+  --color-slate-2: #655EFF;
+  --color-slate-3: #161533;
+
+  --color-gray-0: #FFFFFF;
+  --color-gray-1: #F3F2F7;
+  --color-gray-2: #D8D7E0;
+  --color-gray-3: #9F9EAE;
+  --color-gray-4: #6F6E87;
+  --color-gray-5: #4A495D;
+  --color-gray-6: #131229;
+  --color-gray-7: #10101E;
+  --color-gray-8: #09090C;
+
+  /* font-family */
+  --fontFamily-mono: apercu-mono-pro, monospace;
+  --fontFamily-sans: apercu-pro, sans-serif;
+  --fontFamily-serif: canela, serif;
+
+  /* font-size */
+  --fontSize-0: 12px;
+  --fontSize-1: 15px;
+  --fontSize-2: 17px;
+  --fontSize-3: 19px;
+  --fontSize-4: 22px;
+  --fontSize-5: 27px;
+  --fontSize-6: 32px;
+  --fontSize-7: 37px;
+  --fontSize-8: 42px;
+  --fontSize-9: 50px;
+  --fontSize-10: 59px;
+
+  /* font-weight */
+  --fontWeight-normal: 400;
+  --fontWeight-medium: 500;
+  --fontWeight-bold: 700;
+
+  /* letter-spacing */
+  --letterSpacing-compact: -0.02em;
+  --letterSpacing-standard: 0;
+  --letterSpacing-comfortable: 0.03em;
+  --letterSpacing-wide: 0.10em;
+  --letterSpacing-extrawide: 0.15em;
+
+  /* line-height */
+  --lineHeight-tight: 1.2;
+  --lineHeight-compact: 1.25;
+  --lineHeight-standard: 1.47;
+  --lineHeight-comfortable: 1.6;
+  --lineHeight-generous: 2;
+
+  /* space (for margin, padding, and position) */
+  --space-0: 0;
+  --space-1: 7px;
+  --space-2: 14px;
+  --space-3: 28px;
+  --space-4: 35px;
+  --space-5: 56px;
+  --space-6: 84px;
+  --space-7: 112px;
+
+  /* e.g. { padding: --space-squish-sm; } */
+  --space-squish-1: var(--space-xs) var(--space-sm);
+  --space-squish-2: var(--space-sm) var(--space-md);
+  --space-squish-3: var(--space-md) var(--space-lg);
+  --space-stretch-1: var(--space-sm) var(--space-xs);
+  --space-stretch-2: var(--space-md) var(--space-sm);
+  --space-stretch-3: var(--space-lg) var(--space-md);
+}
