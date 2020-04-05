@@ -49,7 +49,7 @@ export default {
     generous: 2,
   },
   space: [
-  0, 7, 14, 28, 35, 56, 84, 112
+  0, 7, 14, 28, 35, 56, 84, 112, 140
   ],
   breakpoints: [
     '768px', '1025px', '1356px'

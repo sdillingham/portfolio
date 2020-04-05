@@ -21,7 +21,8 @@
   /* font-family */
   --fontFamily-mono: apercu-mono-pro, monospace;
   --fontFamily-sans: apercu-pro, sans-serif;
-  --fontFamily-serif: canela, serif;
+  --fontFamily-serifHeading: canela, serif;
+  --fontFamily-serifBody: canela-text, serif;
 
   /* font-size */
   --fontSize-0: 12px;
@@ -44,7 +45,7 @@
   /* letter-spacing */
   --letterSpacing-compact: -0.02em;
   --letterSpacing-standard: 0;
-  --letterSpacing-comfortable: 0.03em;
+  --letterSpacing-comfortable: 0.05em;
   --letterSpacing-wide: 0.10em;
   --letterSpacing-extrawide: 0.15em;
 

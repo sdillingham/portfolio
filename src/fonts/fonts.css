@@ -54,6 +54,14 @@
 }
 
 @font-face {
+    font-family: 'canela-text';
+    src: url('CanelaText-Regular.woff') format('woff'),
+      url('CanelaText-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
     font-family: 'canela';
     src: url('Canela-Regular.woff2') format('woff2'),
       url('Canela-Regular.woff2') format('woff2');
