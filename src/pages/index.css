@@ -58,10 +58,10 @@
 
 .jobDates {
     color: var(--color-slate-2);
-    font-family: var(--fontFamily-sans);
-    font-size: 14px;
+    font-family: var(--fontFamily-mono);
+    font-size: 12px;
     font-weight: var(--fontWeight-medium);
-    letter-spacing: var(--letterSpacing-wide);
+    letter-spacing: var(--letterSpacing-extrawide);
     text-transform: uppercase;
 }
 
@@ -75,7 +75,6 @@
 
 .jobCompany a {
     color: var(--color-gray-8);
-    text-decoration: none;
 }
 
 .jobDescription {
@@ -91,10 +90,10 @@
 
 .articleType {
     color: var(--color-slate-1);
-    font-family: var(--fontFamily-sans);
-    font-size: 14px;
+    font-family: var(--fontFamily-mono);
+    font-size: 12px;
     font-weight: var(--fontWeight-medium);
-    letter-spacing: var(--letterSpacing-wide);
+    letter-spacing: var(--letterSpacing-extrawide);
     text-transform: uppercase;
 }
 
@@ -108,7 +107,6 @@
 
 .articleTitle a {
     color: var(--color-gray-2);
-    text-decoration: none;
 }
 
 .articleTeaser {

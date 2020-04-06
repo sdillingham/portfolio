@@ -1,54 +1,73 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { Flex, Box, Link } from "theme-ui"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      marginBottom: `1.45rem`,
+  <Box
+    as='header'
+    sx={{
       position: `absolute`,
-      top: 0,
-      left: 72,
-      right: 72,
+      top: 4,
+      left: 6,
+      right: 6,
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <nav style={{ margin: 0 }}>
+    <Flex>
+      <Box
+        sx={{ flex: '1' }}>
         <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          Home
+        href="/">
+          Sean Dillingham
         </Link>
-        <Link
-          to="/work/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          Work
-        </Link>
-        <Link
-          to="/blog/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          Writing
-        </Link>
-      </nav>
-    </div>
-  </header>
+      </Box>
+      <Box
+        as='nav'>
+        <Flex>
+          <Link
+            href="/"
+            sx={{
+              color: `grays.4`,
+              fontFamily: `sans`,
+              fontSize: 1,
+              fontWeight: `medium`,
+              letterSpacing: `wide`,
+              mr: 3,
+              textDecoration: `none`,
+              textTransform: `uppercase`,
+            }}>
+            Home
+          </Link>
+          <Link
+            href="/work/"
+            sx={{
+              color: `grays.4`,
+              fontFamily: `sans`,
+              fontSize: 1,
+              fontWeight: `medium`,
+              letterSpacing: `wide`,
+              mr: 3,
+              textDecoration: `none`,
+              textTransform: `uppercase`,
+            }}>
+            Work
+          </Link>
+          <Link
+            href="/blog/"
+            sx={{
+              color: `grays.4`,
+              fontFamily: `sans`,
+              fontSize: 1,
+              fontWeight: `medium`,
+              letterSpacing: `wide`,
+              textDecoration: `none`,
+              textTransform: `uppercase`,
+            }}>
+            Writing
+          </Link>
+        </Flex>
+      </Box>
+    </Flex>
+  </Box>
 )
 
 Header.propTypes = {
