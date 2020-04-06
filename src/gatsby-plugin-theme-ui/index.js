@@ -25,6 +25,7 @@ export default {
     mono: 'apercu-mono-pro, monospace',
     sans: 'apercu-pro, sans-serif',
     serif: 'canela, serif',
+    serifText: 'canela-text, serif',
   },
   fontWeights: {
     normal: 400,
