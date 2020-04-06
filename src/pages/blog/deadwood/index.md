@@ -3,16 +3,16 @@ path: "/blog/deadwood-the-golden-age-of-news-devs"
 date: "2013-08-13"
 contentType: "article"
 title: "Deadwood, The Golden Age of News Devs"
-teaser: "It's a great time to be a designer or developer working in a newsroom"
+teaser: "It's a great time to be a designer or developer working in a newsroom – allowed to experiment, fail, and live on the edge of chaos"
 ---
-
-![I wouldn’t trust a man who wouldn’t try to steal a little..](./deadwood.jpg)
 
 To those of us who design and code in newsrooms, it's hard not to see this as an exciting and vibrant moment for our field.
 
 Newsroom developers are doing so much interesting, creative work; every day my Twitter feed turns me on to some new project a team has shipped, or an open source library just posted to GitHub.
 
 This awesomeness begs the question: why now?
+
+![I wouldn’t trust a man who wouldn’t try to steal a little..](./deadwood.jpg)
 
 Great things can happen in organizations when you're working right at the edge of chaos, places that reward energy and imagination (or at least let it go unpunished). The rennaisance we're enjoying feels a bit like Deadwood-style lawlessness, with a confluence of factors at work:
 

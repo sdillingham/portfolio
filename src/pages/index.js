@@ -1,7 +1,6 @@
 import React from "react"
 import { Box, Flex, Grid, Heading, Image, Link, Text } from "theme-ui"
 import profile from "../images/img-profile.jpg"
-import "./constants.css"
 
 import LayoutHome from "../components/layoutHome"
 import Header from "../components/header"

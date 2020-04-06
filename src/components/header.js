@@ -16,7 +16,16 @@ const Header = ({ siteTitle }) => (
       <Box
         sx={{ flex: '1' }}>
         <Link
-        href="/">
+        href="/"
+        sx={{
+          color: `grays.2`,
+          fontFamily: `sans`,
+          fontSize: 1,
+          fontWeight: `bold`,
+          letterSpacing: `extrawide`,
+          textDecoration: `none`,
+          textTransform: `uppercase`,
+        }}>
           Sean Dillingham
         </Link>
       </Box>
@@ -28,7 +37,7 @@ const Header = ({ siteTitle }) => (
             sx={{
               color: `grays.4`,
               fontFamily: `sans`,
-              fontSize: 1,
+              fontSize: `14px`,
               fontWeight: `medium`,
               letterSpacing: `wide`,
               mr: 3,
@@ -42,7 +51,7 @@ const Header = ({ siteTitle }) => (
             sx={{
               color: `grays.4`,
               fontFamily: `sans`,
-              fontSize: 1,
+              fontSize: `14px`,
               fontWeight: `medium`,
               letterSpacing: `wide`,
               mr: 3,
@@ -56,7 +65,7 @@ const Header = ({ siteTitle }) => (
             sx={{
               color: `grays.4`,
               fontFamily: `sans`,
-              fontSize: 1,
+              fontSize: `14px`,
               fontWeight: `medium`,
               letterSpacing: `wide`,
               textDecoration: `none`,
