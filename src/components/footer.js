@@ -1,7 +1,7 @@
 import React from "react"
 import { Box, Flex, Grid, Link, Text } from "theme-ui"
 
-const Footer = ({}) => (
+const Footer = () => (
   <Box
     bg='grays.6'
     sx={{ py: 2 }}

@@ -12,7 +12,7 @@ Newsroom developers are doing so much interesting, creative work; every day my T
 
 This awesomeness begs the question: why now?
 
-![I wouldn’t trust a man who wouldn’t try to steal a little..](./deadwood.jpg)
+![I wouldn’t trust a man who wouldn’t try to steal a little.](./deadwood.jpg)
 
 Great things can happen in organizations when you're working right at the edge of chaos, places that reward energy and imagination (or at least let it go unpunished). The rennaisance we're enjoying feels a bit like Deadwood-style lawlessness, with a confluence of factors at work:
 

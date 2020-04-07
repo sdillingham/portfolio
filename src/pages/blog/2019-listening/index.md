@@ -8,23 +8,23 @@ teaser: "Albums and live shows I loved in 2019"
 
 ## Albums
 
-- She Keeps Bees - Eight Houses
-- Palm - Rock Island
-- Jóhann Jóhannsson - End of Summer
-- Habibi Funk: An Eclectic Selection of Music from the Arab World
-- 75 Dollar Bill - I Was Real
-- Elza Soares - Planeta Forme
-- Bill Orcutt - Odds Against Tomorrow
-- Aldous Harding - Designer
-- Low - Double Negative
+- Eight Houses <cite>She Keeps Bees</cite>
+- Rock Island <cite>Palm</cite>
+- End of Summer <cite>Jóhann Jóhannsson</cite>
+- Habibi Funk: An Eclectic Selection of Music from the Arab World <cite>Various Artists</cite>
+- I Was Real <cite>75 Dollar Bill</cite>
+- Planeta Forme <cite>Elza Soares</cite>
+- Odds Against Tomorrow <cite>Bill Orcutt</cite>
+- Designer <cite>Aldous Harding</cite>
+- Double Negative <cite>Low</cite>
 
 ## Live Shows
 
-- Xylouris White - Dec 10, 2019 @ Zebulon
-- Daniel Higgs - Oct 13, 2019 @ Zebulon
-- Arto Lindsay - Oct 12, 2019 @ Zebulon
-- Xylouris White - Apr 21, 2019 @ Zebulon
-- Tim Rutili / Randy Randall - Apr 18, 2019 @ Zebulon
-- Caetano Veloso - Apr 7, 2019 @ Ace Hotel
-- Bombino - Mar 30, 2019 @ Zebulon
-- Damien Jurado - Mar 7, 2019 @ Highland Park Ebell
+- Xylouris White <cite>Dec 10, 2019 @ Zebulon</cite>
+- Daniel Higgs <cite>Oct 13, 2019 @ Zebulon</cite>
+- Arto Lindsay <cite>Oct 12, 2019 @ Zebulon</cite>
+- Xylouris White <cite>Apr 21, 2019 @ Zebulon</cite>
+- Tim Rutili / Randy Randall <cite>Apr 18, 2019 @ Zebulon</cite>
+- Caetano Veloso <cite>Apr 7, 2019 @ Ace Hotel</cite>
+- Bombino <cite>Mar 30, 2019 @ Zebulon</cite>
+- Damien Jurado <cite>Mar 7, 2019 @ Highland Park Ebell</cite>

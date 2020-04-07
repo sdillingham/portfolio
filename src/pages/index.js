@@ -278,9 +278,6 @@ const IndexPage = () => (
                       }}>
                       Finding echoes of the monomyth in the design process.
                     </Text>
-                    <summary className="articleType"></summary>
-                    <h2 className="articleTitle"><a href="#"></a></h2>
-                    <p className="articleTeaser"></p>
                   </Box>
                   <Box mb={0}>
                     <Text
@@ -357,9 +354,6 @@ const IndexPage = () => (
                       }}>
                       Finding echoes of the monomyth in the design process.
                     </Text>
-                    <summary className="articleType"></summary>
-                    <h2 className="articleTitle"><a href="#"></a></h2>
-                    <p className="articleTeaser"></p>
                   </Box>
                 </Grid>  
               </Box>
