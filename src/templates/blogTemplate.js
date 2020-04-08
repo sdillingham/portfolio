@@ -52,6 +52,14 @@ export default function Template({
             line-height: 30px;
             margin-bottom: 0;
           }
+          .postContent hr {
+            background: #655EFF;
+            border: 0;
+            display: block;
+            height: 3px;
+            margin: 56px auto;
+            width: 184px;
+          }
           .postContent figure {
             margin: 56px 0;
             position: relative;
