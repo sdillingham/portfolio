@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import { Box, Grid, Heading, Link, Text } from "theme-ui"
 
 import Layout from "../components/layout"
@@ -90,9 +91,11 @@ const WritingPage = ({ data }) => {
                       href={node.frontmatter.path}
                       sx={{
                         color: `grays.1`,
+                        display: `inline-block`,
                         fontFamily: `serif`,
                         fontSize: 4,
                         fontWeight: `normal`,
+                        lineHeight: `compact`,
                         mb: 1,
                       }}>
                       {node.frontmatter.title}
@@ -165,9 +168,11 @@ const WritingPage = ({ data }) => {
                       href={node.frontmatter.path}
                       sx={{
                         color: `grays.1`,
+                        display: `inline-block`,
                         fontFamily: `serif`,
                         fontSize: 4,
                         fontWeight: `normal`,
+                        lineHeight: `compact`,
                         mb: 1,
                       }}>
                       {node.frontmatter.title}
@@ -237,9 +242,11 @@ const WritingPage = ({ data }) => {
                       href={node.frontmatter.path}
                       sx={{
                         color: `grays.1`,
+                        display: `inline-block`,
                         fontFamily: `serif`,
                         fontSize: 4,
                         fontWeight: `normal`,
+                        lineHeight: `compact`,
                         mb: 1,
                       }}>
                       {node.frontmatter.title}

@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import { Box, Flex, Grid, Heading, Image, Link, Text } from "theme-ui"
 import profile from "../images/img-profile.jpg"
 
@@ -11,7 +12,7 @@ const IndexPage = ({ data }) => {
 
   return (
   <LayoutHome>
-    <SEO title="Home" />
+    <SEO title='Home' />
     <Header />
     <Grid
       gap={0}
@@ -226,10 +227,11 @@ const IndexPage = ({ data }) => {
                           href={node.frontmatter.path}
                           sx={{
                             color: `grays.2`,
+                            display: `inline-block`,
                             fontFamily: `serif`,
                             fontSize: 4,
                             fontWeight: `normal`,
-                            lineHeight: `comfortable`,
+                            lineHeight: `compact`,
                             mb: 0,
                           }}>
                           {node.frontmatter.title}

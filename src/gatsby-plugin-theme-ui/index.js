@@ -56,26 +56,4 @@ export default {
   breakpoints: [
     '768px', '1025px', '1356px'
   ],
-  styles: {
-    h1: {
-      fontFamily: 'sans',
-      fontWeight: 'bold',
-      lineHeight: 'compact',
-      marginTop: 0,
-      marginBottom: 3,
-    },
-    p: {
-      fontFamily: 'sans',
-      fontWeight: 'normal',
-      lineHeight: 'standard',
-      marginTop: 0,
-      marginBottom: 3,
-    },
-    a: {
-      color: 'grays.2',
-      ':hover, :focus': {
-        color: 'grays.0',
-      },
-    },
-  },
 }
