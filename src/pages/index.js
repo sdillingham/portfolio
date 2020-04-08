@@ -6,7 +6,10 @@ import LayoutHome from "../components/layoutHome"
 import Header from "../components/header"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => {
+  const articles = data.allMarkdownRemark.edges
+
+  return (
   <LayoutHome>
     <SEO title="Home" />
     <Header />
@@ -203,158 +206,48 @@ const IndexPage = () => (
                 <Grid
                 gap={3}
                 columns={[2]}>
-                  <Box mb={0}>
-                    <Text
-                      as='summary'
-                      sx={{
-                        color: `slates.1`,
-                        fontFamily: `mono`,
-                        fontSize: 0,
-                        fontWeight: `medium`,
-                        letterSpacing: `extrawide`,
-                        textTransform: `uppercase`,
-                      }}>
-                      Notes
-                    </Text>
-                    <Heading as='h2'>
-                      <Link 
-                        href='#'
+                  {articles.map(({ node }) => {
+                  return (
+                    <Box mb={0}>
+                      <Text
+                        as='summary'
                         sx={{
-                          color: `grays.2`,
-                          fontFamily: `serif`,
-                          fontSize: 4,
-                          fontWeight: `normal`,
-                          lineHeight: `comfortable`,
-                          mb: 0,
+                          color: `slates.1`,
+                          fontFamily: `mono`,
+                          fontSize: 0,
+                          fontWeight: `medium`,
+                          letterSpacing: `extrawide`,
+                          textTransform: `uppercase`,
                         }}>
-                        The Emotional Side of People Management
-                      </Link>
-                    </Heading>
-                    <Text
-                      as='p'
-                      sx={{
-                        color: `grays.3`,
-                        fontFamily: `sans`,
-                        fontSize: 1,
-                        lineHeight: `comfortable`,
-                      }}>
-                      Random thoughts on the hard and seldom talked-about emotional dimension of being a manager.
-                    </Text>
-                  </Box>
-                  <Box mb={0}>
-                    <Text
-                      as='summary'
-                      sx={{
-                        color: `slates.1`,
-                        fontFamily: `mono`,
-                        fontSize: 0,
-                        fontWeight: `medium`,
-                        letterSpacing: `extrawide`,
-                        textTransform: `uppercase`,
-                      }}>
-                      Article
-                    </Text>
-                    <Heading as='h2'>
-                      <Link 
-                        href='#'
+                        {node.frontmatter.contentType}
+                      </Text>
+                      <Heading as='h2'>
+                        <Link 
+                          href={node.frontmatter.path}
+                          sx={{
+                            color: `grays.2`,
+                            fontFamily: `serif`,
+                            fontSize: 4,
+                            fontWeight: `normal`,
+                            lineHeight: `comfortable`,
+                            mb: 0,
+                          }}>
+                          {node.frontmatter.title}
+                        </Link>
+                      </Heading>
+                      <Text
+                        as='p'
                         sx={{
-                          color: `grays.2`,
-                          fontFamily: `serif`,
-                          fontSize: 4,
-                          fontWeight: `normal`,
+                          color: `grays.3`,
+                          fontFamily: `sans`,
+                          fontSize: 1,
                           lineHeight: `comfortable`,
-                          mb: 0,
                         }}>
-                        The Design Loop and The Hero’s Journey
-                      </Link>
-                    </Heading>
-                    <Text
-                      as='p'
-                      sx={{
-                        color: `grays.3`,
-                        fontFamily: `sans`,
-                        fontSize: 1,
-                        lineHeight: `comfortable`,
-                      }}>
-                      Finding echoes of the monomyth in the design process.
-                    </Text>
-                  </Box>
-                  <Box mb={0}>
-                    <Text
-                      as='summary'
-                      sx={{
-                        color: `slates.1`,
-                        fontFamily: `mono`,
-                        fontSize: 0,
-                        fontWeight: `medium`,
-                        letterSpacing: `extrawide`,
-                        textTransform: `uppercase`,
-                      }}>
-                      Notes
-                    </Text>
-                    <Heading as='h2'>
-                      <Link 
-                        href='#'
-                        sx={{
-                          color: `grays.2`,
-                          fontFamily: `serif`,
-                          fontSize: 4,
-                          fontWeight: `normal`,
-                          lineHeight: `comfortable`,
-                          mb: 0,
-                        }}>
-                        The Emotional Side of People Management
-                      </Link>
-                    </Heading>
-                    <Text
-                      as='p'
-                      sx={{
-                        color: `grays.3`,
-                        fontFamily: `sans`,
-                        fontSize: 1,
-                        lineHeight: `comfortable`,
-                      }}>
-                      Random thoughts on the hard and seldom talked-about emotional dimension of being a manager.
-                    </Text>
-                  </Box>
-                  <Box mb={0}>
-                    <Text
-                      as='summary'
-                      sx={{
-                        color: `slates.1`,
-                        fontFamily: `mono`,
-                        fontSize: 0,
-                        fontWeight: `medium`,
-                        letterSpacing: `extrawide`,
-                        textTransform: `uppercase`,
-                      }}>
-                      Article
-                    </Text>
-                    <Heading as='h2'>
-                      <Link 
-                        href='#'
-                        sx={{
-                          color: `grays.2`,
-                          fontFamily: `serif`,
-                          fontSize: 4,
-                          fontWeight: `normal`,
-                          lineHeight: `comfortable`,
-                          mb: 0,
-                        }}>
-                        The Design Loop and The Hero’s Journey
-                      </Link>
-                    </Heading>
-                    <Text
-                      as='p'
-                      sx={{
-                        color: `grays.3`,
-                        fontFamily: `sans`,
-                        fontSize: 1,
-                        lineHeight: `comfortable`,
-                      }}>
-                      Finding echoes of the monomyth in the design process.
-                    </Text>
-                  </Box>
+                        {node.frontmatter.teaser}
+                      </Text>
+                    </Box>
+                  )
+                  })}
                 </Grid>  
               </Box>
             </Grid>
@@ -444,5 +337,25 @@ const IndexPage = () => (
 
   </LayoutHome>
 )
+}
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  query indexPageQuery {
+    allMarkdownRemark(limit: 4, sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          id
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            path
+            title
+            teaser
+            contentType
+          }
+        }
+      }
+    }
+  }
+`
