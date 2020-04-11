@@ -128,7 +128,7 @@ export default {
     },
     wrapper: {
       position: "sticky",
-      top: 0,
+      top: "-100%",
     }
   },
   images: {
