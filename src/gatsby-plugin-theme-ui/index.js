@@ -138,6 +138,12 @@ export default {
       borderRadius: "28px",
       display: "block",
     },
+    mobile: {
+      borderStyle: "solid",
+      borderWidth: "28px 7px",
+      borderRadius: "28px",
+      display: "block",
+    },
     full: {
       display: "block",
       width: "100%",

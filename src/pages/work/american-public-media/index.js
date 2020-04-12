@@ -2,6 +2,10 @@ import React from "react"
 import { Box, Container, Grid, Heading, Image, Link, Text } from "theme-ui"
 import kpccStory from "../../../images/american-public-media/scpr-story.jpg"
 import kpccProgram from "../../../images/american-public-media/scpr-program.jpg"
+import iphoneLive from "../../../images/kpcc-iphone/iphone-live.jpg"
+import iphoneSegment from "../../../images/kpcc-iphone/iphone-segment.jpg"
+import iphoneProgram from "../../../images/kpcc-iphone/iphone-program.jpg"
+import iphoneScrubber from "../../../images/kpcc-iphone/iphone-scrubber.jpg"
 import apmComponents from "../../../images/american-public-media/apmreports-components.jpg"
 import apmFeature from "../../../images/american-public-media/apmreports-feature.jpg"
 import apmHomepage from "../../../images/american-public-media/apmreports-homepage.jpg"
@@ -159,36 +163,66 @@ const APMPage = () => (
       </Container>
     </Box>
     <Box backgroundColor="grays.1" sx={{ variant: "boxes.card" }}>
-      <Container
+      <Grid gap={3} columns={[12]} sx={{ mx: "auto", maxWidth: "1244px" }}>
+        <Box
         sx={{
-          maxWidth: "1244px",
-          width: "auto",
-        }}>
-        <Text
-          sx={{ color: "grays.4", mb: 1, ml: 3, variant: "texts.metadata" }}>
-          Collaboration & Comments
-        </Text>
-        <Image 
-          src={outpostComments}
-          sx={{ borderColor: "grays.2", height: "75vh", variant: "images.desktop" }}
-        />
-      </Container>
+            gridColumn: "4 / 10",
+          }}>
+          <Text
+            sx={{ color: "grays.4", mb: 1, textAlign: "center", variant: "texts.metadata" }}>
+            Live and Segment Player Views
+          </Text>
+        </Box>
+        <Box
+          sx={{
+            gridColumn: "4 / 7",
+          }}>
+          <Image 
+            src={iphoneLive}
+            sx={{ borderColor: "grays.2", variant: "images.mobile" }}
+          />
+        </Box>
+        <Box
+          sx={{
+            gridColumn: "7 / 10",
+          }}>
+          <Image 
+            src={iphoneSegment}
+            sx={{ borderColor: "grays.2", variant: "images.mobile" }}
+          />
+        </Box>
+      </Grid>
     </Box>
     <Box backgroundColor="grays.7" sx={{ variant: "boxes.card" }}>
-      <Container
+      <Grid gap={3} columns={[12]} sx={{ mx: "auto", maxWidth: "1244px" }}>
+        <Box
         sx={{
-          maxWidth: "1244px",
-          width: "auto",
-        }}>
-        <Text
-          sx={{ color: "grays.4", mb: 1, ml: 3, variant: "texts.metadata" }}>
-          Automated Content Review
-        </Text>
-        <Image 
-          src={outpostComments}
-          sx={{ borderColor: "grays.8", height: "75vh", variant: "images.desktop" }}
-        />
-      </Container>
+            gridColumn: "4 / 10",
+          }}>
+          <Text
+            sx={{ color: "grays.4", mb: 1, textAlign: "center", variant: "texts.metadata" }}>
+            Show And Episode Views
+          </Text>
+        </Box>
+        <Box
+          sx={{
+            gridColumn: "4 / 7",
+          }}>
+          <Image 
+            src={iphoneProgram}
+            sx={{ borderColor: "grays.8", variant: "images.mobile" }}
+          />
+        </Box>
+        <Box
+          sx={{
+            gridColumn: "7 / 10",
+          }}>
+          <Image 
+            src={iphoneScrubber}
+            sx={{ borderColor: "grays.8", variant: "images.mobile" }}
+          />
+        </Box>
+      </Grid>
     </Box>
     <Box backgroundColor="grays.0" sx={{ variant: "boxes.card" }}>
       <Container
