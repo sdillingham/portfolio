@@ -4,11 +4,12 @@ import { Box, Flex, Container, Link, Text } from "theme-ui"
 const Footer = () => (
   <Box
     bg='grays.6'
-    sx={{ py: 2 }}
+    sx={{ py: [3, 2] }}
     as='footer' >
     <Container
       sx={{
-        margin: "0 auto",
+        mx: ["21px", 4, "auto"],
+        my: "0",
         maxWidth: "1244px",
         width: "auto",
       }}>

@@ -6,14 +6,24 @@ const Header = ({ siteTitle }) => (
   <Box
     as='header'
     sx={{
-      position: `absolute`,
-      top: 4,
-      left: 6,
-      right: 6,
+      backgroundColor: [`grays.6`, `transparent`],
+      position: [`relative`, `absolute`],
+      px: ["21px", 4, 0],
+      pt: [4, 0],
+      top: [`auto`, 4],
+      left: [`auto`, 2, 6],
+      right: [`auto`, 2, 6],
     }}>
-    <Flex>
+    <Box
+      sx={{
+        display: ['block', 'flex'],
+        pb: [1, 0],
+      }}>
       <Box
-        sx={{ flex: '1' }}>
+        sx={{
+          flex: '1',
+          mb: [1, 0],
+        }}>
         <Link
         href="/"
         sx={{
@@ -29,7 +39,10 @@ const Header = ({ siteTitle }) => (
         </Link>
       </Box>
       <Box
-        as='nav'>
+        as='nav'
+        sx={{
+          mb: [1, 0],
+        }}>
         <Flex>
           <Link
             href="/"
@@ -74,7 +87,7 @@ const Header = ({ siteTitle }) => (
           </Link>
         </Flex>
       </Box>
-    </Flex>
+    </Box>
   </Box>
 )
 

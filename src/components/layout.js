@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Box } from "theme-ui"
 
 import Header from "./header"
 import Footer from "./footer"
@@ -28,7 +29,13 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <main>{children}</main>
+        <Box
+          as="main"
+          sx={{
+            mx: ["21px", 4, 0]
+          }}>
+          {children}
+        </Box>
       <Footer />
     </>
   )

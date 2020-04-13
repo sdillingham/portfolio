@@ -65,18 +65,16 @@ const OutpostPage = () => (
           }}
         >
           <Text sx={{ variant: "texts.workDescription" }}>
-            At KPCC, we see the CMS as “<a href="https://twitter.com/JohannavanEeden/status/534416060116922368">the box of all that’s possible.</a>” It’s
+            <p>At KPCC, we see the CMS as “<a href="https://twitter.com/JohannavanEeden/status/534416060116922368">the box of all that’s possible.</a>” It’s
             also the tool that our reporters and editors spends their entire day
             in, so we built our publishing platform from the ground up, tailored
-            to their specific needs.
-          </Text>
-          <Text sx={{ variant: "texts.workDescription" }}>
-            In an industry where most newsrooms hate their CMS, we’re proud of
+            to their specific needs.</p>
+            <p>In an industry where most newsrooms hate their CMS, we’re proud of
             the fact that KPCC’s editorial staff find Outpost a pleasure to use.
             And while Outpost did a good job supporting the daily publishing
             needs of KPCC’s growing newsroom, we were missing opportunities to
             delight users, automate repetitive tasks, and free up journalists to
-            do more important work.
+            do more important work.</p>
           </Text>
         </Box>
       </Grid>

@@ -20,21 +20,21 @@ export default function Template({
           .postContent h2 {
             color: #D8D7E0;
             font-family: apercu-pro, sans-serif;
-            font-size: 22px;
-            line-height: 28px;
-            margin-bottom: 28px;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 24px;
           }
           .postContent p, 
           .postContent li {
             color: #D8D7E0;
             font-family: apercu-pro, sans-serif;
-            font-size: 19px;
-            line-height: 28px;
-            margin-bottom: 28px;
+            font-size: 17px;
+            line-height: 24px;
+            margin-bottom: 24px;
             opacity: 0.85;
           }
           .postContent a {
-            color: #A7A3FF;
+            color: #D8D7E0;
             text-decoration: underline;
           }
           .postContent a:hover {
@@ -74,16 +74,12 @@ export default function Template({
             font-family: apercu-mono-pro, monospace;
             font-size: 12px;
             font-weight: 500;
-            left: -34.8%;
+            left: auto;
             line-height: 1.5;
-            width: 30.2%; 
-            padding-bottom: 14px;
-            position: absolute;
+            padding: 14px 0;
+            position: relative;
             text-transform: uppercase;
-          }
-
-          .notes .postContent ul {
-            margin-left: 0;
+            width: 100%; 
           }
           .notes .postContent li:after {
             background: #6F6E87;
@@ -109,13 +105,50 @@ export default function Template({
             font-size: 17px;
             font-style: normal;
           }
+          @media screen and (min-width: 768px) {
+            .postContent figcaption {
+              left: -34.8%;
+              padding-bottom: 7px;
+              position: absolute;
+              width: 30.2%; 
+            }
+            .notes .postContent ul {
+              margin-left: 0;
+            }
+            .postContent h2 {
+              font-size: 22px;
+              line-height: 28px;
+              margin-bottom: 28px;
+            }
+            .postContent p, 
+            .postContent li {
+              font-size: 19px;
+              line-height: 28px;
+              margin-bottom: 28px;
+            }
+            .postContent blockquote p {
+              font-size: 20px;
+              line-height: 28px;
+            }
+            .notes .postContent li li {
+              margin-left: 14px;
+            }
+            .notes .postContent li cite {
+              font-size: 15px;
+            }
+          }
         `}
       />
       <Grid
         as="article"
         gap={3}
         columns={[8]}
-        sx={{ mx: 'auto', mt: 9, mb: 7, maxWidth: '820px' }}>
+        sx={{
+          mx: 'auto',
+          mt: [5, 9, 9],
+          mb: [5, 7, 7],
+          maxWidth: '820px'
+        }}>
         <Box sx={{ gridColumn: '1 / 9' }}>
           {frontmatter.contentType!=='notes' &&
             <Heading
@@ -123,11 +156,11 @@ export default function Template({
             sx={{
               color: `grays.1`,
               fontFamily: `serif`,
-              fontSize: 10,
+              fontSize: [6, 10, 10],
               fontWeight: `medium`,
               lineHeight: `tight`,
               mb: 0,
-              pb: 4,
+              pb: [3, 4, 4],
               borderBottom: `3px solid`,
               borderBottomColor: `grays.4`, 
             }}>
@@ -140,11 +173,11 @@ export default function Template({
             sx={{
               color: `grays.1`,
               fontFamily: `serif`,
-              fontSize: 8,
+              fontSize: [5, 8, 8],
               fontWeight: `medium`,
               lineHeight: `tight`,
               mb: 0,
-              pb: 4,
+              pb: [3, 4, 4],
               borderBottom: `3px solid`,
               borderBottomColor: `grays.4`, 
             }}>
@@ -153,16 +186,19 @@ export default function Template({
           }
         </Box>
         {frontmatter.contentType!=='notes' &&
-        <Box sx={{ gridColumn: '1 / 7' }}>
+        <Box
+          sx={{
+            gridColumn: ['1 / 9', '1 / 7'] 
+          }}>
           <Text
             as='p'
             sx={{
               color: `grays.2`,
               fontFamily: `sans`,
-              fontSize: 5,
+              fontSize: [3, 5, 5],
               fontWeight: `light`,
-              lineHeight: `tight`,
-              mb: 7,
+              lineHeight: [`standard`, `tight`, `tight`],
+              mb: [1, 7, 7],
             }}>
             {frontmatter.teaser}
           </Text>
@@ -170,7 +206,9 @@ export default function Template({
         }
         <Box
           as='aside'
-          sx={{ gridColumn: '1 / 3' }}>
+          sx={{
+            gridColumn: ['1 / 9', '1 / 3'] 
+          }}>
           <Text
             as='p'
             sx={{
@@ -203,7 +241,9 @@ export default function Template({
         <Box
           as='section'
           className={frontmatter.contentType}
-          sx={{ gridColumn: '3 / 9' }}>
+          sx={{
+            gridColumn: ['1 / 9', '3 / 9'] 
+          }}>
           <div
             className="postContent"
             dangerouslySetInnerHTML={{ __html: html }}

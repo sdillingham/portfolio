@@ -44,11 +44,21 @@ a {
   text-decoration: none;
   -webkit-text-decoration-skip: objects;
 }
+a small {
+  display: none;
+}
 a:hover {
   text-decoration: underline;
 }
-a:visited {
-  color: #6F6E87;
+a:hover small {
+  display: inline-block;
+  margin-left: 4px;
+}
+p a {
+  text-decoration: underline;
+}
+p a:visited {
+  color: currentColor;
 }
 abbr[title] {
   border-bottom: none;

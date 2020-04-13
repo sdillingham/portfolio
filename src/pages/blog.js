@@ -239,7 +239,7 @@ const WritingPage = ({ data }) => {
                     mb: 1,
                     }}>
                     <Link
-                      href={node.frontmatter.path}
+                      href={node.frontmatter.url}
                       sx={{
                         color: `grays.1`,
                         display: `inline-block`,
@@ -250,6 +250,7 @@ const WritingPage = ({ data }) => {
                         mb: 1,
                       }}>
                       {node.frontmatter.title}
+                      <small> ↗</small>
                     </Link>
                   </Heading>
                   <Text
@@ -286,6 +287,7 @@ export const pageQuery = graphql`
             title
             teaser
             contentType
+            url
           }
         }
       }
