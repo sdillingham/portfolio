@@ -95,7 +95,7 @@ export default {
     workSubheadDark: {
       color: "grays.4",
       fontFamily: "sans",
-      fontSize: 5,
+      fontSize: 4,
       fontWeight: "light",
       lineHeight: "compact",
     },
@@ -128,8 +128,8 @@ export default {
     },
     wrapper: {
       position: "sticky",
-      top: "-100%",
-    }
+      top: "-1000%",
+    },
   },
   images: {
     desktop: {
