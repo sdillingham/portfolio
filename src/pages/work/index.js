@@ -156,7 +156,7 @@ const WorkPage = () => (
           Selected work
         </Text>
       </Box>
-      <Box sx={{ gridColumn: '5 / 8' }}>
+      {/* <Box sx={{ gridColumn: '5 / 8' }}>
         <Text
           sx={{
             color: `slates.2`,
@@ -193,7 +193,7 @@ const WorkPage = () => (
         }}>
         Signal Sciences has the most intelligent decision-making engine of any app security platform. I designed features to put that power into users' hands, enabling them to tailor security rules to match their business.
         </Text>
-      </Box>
+      </Box> */}
       <Box sx={{ gridColumn: '5 / 8' }}>
         <Text
           sx={{

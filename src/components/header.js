@@ -10,8 +10,7 @@ const Header = ({ siteTitle }) => (
       top: 4,
       left: 6,
       right: 6,
-    }}
-  >
+    }}>
     <Flex>
       <Box
         sx={{ flex: '1' }}>
