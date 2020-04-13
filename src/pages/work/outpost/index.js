@@ -8,8 +8,8 @@ import outpostEditor from "../../../images/outpost/editor.mp4"
 
 import Layout from "../../../components/layout"
 import WorkFooter from "../../../components/workFooter"
-import SEO from "../../../components/seo"
 import Video from "../../../components/video"
+import SEO from "../../../components/seo"
 
 const OutpostPage = () => (
   <Layout>
