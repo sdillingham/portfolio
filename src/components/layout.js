@@ -29,11 +29,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-        <Box
-          as="main"
-          sx={{
-            mx: ["21px", 4, 0]
-          }}>
+        <Box as="main">
           {children}
         </Box>
       <Footer />

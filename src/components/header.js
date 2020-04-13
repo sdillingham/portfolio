@@ -11,8 +11,8 @@ const Header = ({ siteTitle }) => (
       px: ["21px", 4, 0],
       pt: [4, 0],
       top: [`auto`, 4],
-      left: [`auto`, 2, 6],
-      right: [`auto`, 2, 6],
+      left: [`auto`, 2, 4],
+      right: [`auto`, 2, 4],
     }}>
     <Box
       sx={{

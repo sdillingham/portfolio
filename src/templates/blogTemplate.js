@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Grid, Heading, Text } from "theme-ui"
+import { Box, Container, Grid, Heading, Text } from "theme-ui"
 import { Global, css } from '@emotion/core'
 import { graphql } from "gatsby"
 
@@ -139,117 +139,122 @@ export default function Template({
           }
         `}
       />
-      <Grid
-        as="article"
-        gap={3}
-        columns={[8]}
-        sx={{
-          mx: 'auto',
-          mt: [5, 9, 9],
-          mb: [5, 7, 7],
-          maxWidth: '820px'
-        }}>
-        <Box sx={{ gridColumn: '1 / 9' }}>
+      <Container
+      sx={{
+        maxWidth: "876px",
+        px: ["21px", 4, 3],
+        width: "auto",
+      }}>
+        <Grid
+          as="article"
+          gap={3}
+          columns={[8]}
+          sx={{
+            mt: [5, 9, 9],
+            mb: [5, 7, 7],
+          }}>
+          <Box sx={{ gridColumn: '1 / 9' }}>
+            {frontmatter.contentType!=='notes' &&
+              <Heading
+              as='h1'
+              sx={{
+                color: `grays.1`,
+                fontFamily: `serif`,
+                fontSize: [6, 10, 10],
+                fontWeight: `medium`,
+                lineHeight: `tight`,
+                mb: 0,
+                pb: [3, 4, 4],
+                borderBottom: `3px solid`,
+                borderBottomColor: `grays.4`, 
+              }}>
+                {frontmatter.title}
+              </Heading>
+            }
+            {frontmatter.contentType==='notes' &&
+              <Heading
+              as='h1'
+              sx={{
+                color: `grays.1`,
+                fontFamily: `serif`,
+                fontSize: [5, 8, 8],
+                fontWeight: `medium`,
+                lineHeight: `tight`,
+                mb: 0,
+                pb: [3, 4, 4],
+                borderBottom: `3px solid`,
+                borderBottomColor: `grays.4`, 
+              }}>
+                {frontmatter.title}
+              </Heading>
+            }
+          </Box>
           {frontmatter.contentType!=='notes' &&
-            <Heading
-            as='h1'
+          <Box
             sx={{
-              color: `grays.1`,
-              fontFamily: `serif`,
-              fontSize: [6, 10, 10],
-              fontWeight: `medium`,
-              lineHeight: `tight`,
-              mb: 0,
-              pb: [3, 4, 4],
-              borderBottom: `3px solid`,
-              borderBottomColor: `grays.4`, 
+              gridColumn: ['1 / 9', '1 / 7'] 
             }}>
-              {frontmatter.title}
-            </Heading>
+            <Text
+              as='p'
+              sx={{
+                color: `grays.2`,
+                fontFamily: `sans`,
+                fontSize: [3, 5, 5],
+                fontWeight: `light`,
+                lineHeight: [`standard`, `tight`, `tight`],
+                mb: [1, 7, 7],
+              }}>
+              {frontmatter.teaser}
+            </Text>
+          </Box>
           }
-          {frontmatter.contentType==='notes' &&
-            <Heading
-            as='h1'
+          <Box
+            as='aside'
             sx={{
-              color: `grays.1`,
-              fontFamily: `serif`,
-              fontSize: [5, 8, 8],
-              fontWeight: `medium`,
-              lineHeight: `tight`,
-              mb: 0,
-              pb: [3, 4, 4],
-              borderBottom: `3px solid`,
-              borderBottomColor: `grays.4`, 
+              gridColumn: ['1 / 9', '1 / 3'] 
             }}>
-              {frontmatter.title}
-            </Heading>
-          }
-        </Box>
-        {frontmatter.contentType!=='notes' &&
-        <Box
-          sx={{
-            gridColumn: ['1 / 9', '1 / 7'] 
-          }}>
-          <Text
-            as='p'
+            <Text
+              as='p'
+              sx={{
+                color: `grays.4`,
+                fontFamily: `mono`,
+                fontSize: 0,
+                fontWeight: `medium`,
+                letterSpacing: `comfortable`,
+                lineHeight: `standard`,
+                mb: 0,
+                mt: `6px`,
+                textTransform: `uppercase`,
+              }}>
+              Published
+            </Text>
+            <Text
+              as='time'
+              sx={{
+                color: `slates.1`,
+                fontFamily: `mono`,
+                fontSize: 0,
+                fontWeight: `medium`,
+                letterSpacing: `comfortable`,
+                lineHeight: `standard`,
+                textTransform: `uppercase`,
+              }}>
+              {frontmatter.date}
+            </Text>
+          </Box>
+          <Box
+            as='section'
+            className={frontmatter.contentType}
             sx={{
-              color: `grays.2`,
-              fontFamily: `sans`,
-              fontSize: [3, 5, 5],
-              fontWeight: `light`,
-              lineHeight: [`standard`, `tight`, `tight`],
-              mb: [1, 7, 7],
+              gridColumn: ['1 / 9', '3 / 9'] 
             }}>
-            {frontmatter.teaser}
-          </Text>
-        </Box>
-        }
-        <Box
-          as='aside'
-          sx={{
-            gridColumn: ['1 / 9', '1 / 3'] 
-          }}>
-          <Text
-            as='p'
-            sx={{
-              color: `grays.4`,
-              fontFamily: `mono`,
-              fontSize: 0,
-              fontWeight: `medium`,
-              letterSpacing: `comfortable`,
-              lineHeight: `standard`,
-              mb: 0,
-              mt: `6px`,
-              textTransform: `uppercase`,
-            }}>
-            Published
-          </Text>
-          <Text
-            as='time'
-            sx={{
-              color: `slates.1`,
-              fontFamily: `mono`,
-              fontSize: 0,
-              fontWeight: `medium`,
-              letterSpacing: `comfortable`,
-              lineHeight: `standard`,
-              textTransform: `uppercase`,
-            }}>
-            {frontmatter.date}
-          </Text>
-        </Box>
-        <Box
-          as='section'
-          className={frontmatter.contentType}
-          sx={{
-            gridColumn: ['1 / 9', '3 / 9'] 
-          }}>
-          <div
-            className="postContent"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
-        </Box>
-      </Grid>
+            <div
+              className="postContent"
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
+          </Box>
+        </Grid>
+      </Container>
     </Layout>
   )
 }

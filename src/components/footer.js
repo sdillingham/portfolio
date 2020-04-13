@@ -8,9 +8,9 @@ const Footer = () => (
     as='footer' >
     <Container
       sx={{
-        mx: ["21px", 4, "auto"],
         my: "0",
-        maxWidth: "1244px",
+        maxWidth: "1300px",
+        px: ["21px", 4, 3],
         width: "auto",
       }}>
       <Box>
