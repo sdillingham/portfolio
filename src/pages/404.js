@@ -9,8 +9,9 @@ const NotFoundPage = () => (
     <SEO title="404: Not Found" />
     <Container
       sx={{
-        maxWidth: "1244px",
+        maxWidth: "1300px",
         my: 9,
+        px: ["21px", 4, 3],
         width: "auto",
       }}>
       <Heading sx={{ mb: 3, variant: "headings.workH1" }}>404 Page Not Found</Heading>

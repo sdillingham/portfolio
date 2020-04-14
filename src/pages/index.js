@@ -16,8 +16,11 @@ const IndexPage = ({ data }) => {
     <Header />
     <Grid
       gap={0}
-      columns={[2, '1fr 2fr']}>
-      <Box>
+      columns={[1, '1fr 2fr']}>
+      <Box
+        sx={{
+          display: ['none', 'block'],
+        }}>
         <Image
           src={profile}
           sx={{
@@ -33,19 +36,26 @@ const IndexPage = ({ data }) => {
       </Box>
       <Box>
         <Box
-          sx={{ py: 8 }}
+          sx={{
+            pb: [4, 5, 8],
+            pt: [5, 8, 8],
+          }}
           as='section'>
             <Grid
               gap={3}
               columns={[8]}
-              sx={{ mx: 3, maxWidth: '820px' }}>
-              <Box sx={{ gridColumn: '2 / 8' }}>
+              sx={{ mx: ["21px", 5, 3], maxWidth: '820px' }}>
+              <Box
+                sx={{
+                  gridColumn: ['1 / 9', '1 / 9', '2 / 8']
+                }}>
                 <Heading
                   as='h1'
                   sx={{
                     color: 0,
+                    display: ['none', 'block'],
                     fontFamily: `sans`,
-                    fontSize: 10,
+                    fontSize: [0, 8, 10],
                     fontWeight: `bold`,
                     lineHeight: `tight`,
                     mb: 3,
@@ -57,7 +67,7 @@ const IndexPage = ({ data }) => {
                   sx={{
                     color: `grays.1`,
                     fontFamily: `serifText`,
-                    fontSize: 5,
+                    fontSize: [3, 4, 5],
                     fontWeight: `normal`,
                     lineHeight: `standard`,
                     mb: 3,
@@ -69,7 +79,7 @@ const IndexPage = ({ data }) => {
                   sx={{
                     color: `grays.1`,
                     fontFamily: `serifText`,
-                    fontSize: 2,
+                    fontSize: [1, 2, 2],
                     fontWeight: `normal`,
                     lineHeight: `generous`,
                     mb: 3,
@@ -81,13 +91,16 @@ const IndexPage = ({ data }) => {
         </Box>
         <Box 
           bg='grays.0'
-          sx={{ py: 6 }}
+          sx={{ py: [5, 6, 6] }}
           as='section' >
             <Grid
               gap={3}
               columns={[8]}
-              sx={{ mx: 3, maxWidth: '820px' }}>
-              <Box sx={{ gridColumn: '2 / 7' }}>
+              sx={{ mx: ["21px", 5, 3], maxWidth: '820px' }}>
+              <Box
+                sx={{
+                  gridColumn: ['1 / 9', '1 / 9', '2 / 7']
+                }}>
                 <Heading
                   as='h3'
                   sx={{
@@ -140,8 +153,7 @@ const IndexPage = ({ data }) => {
                     I'm currently Head of Design at Signal Sciences, where we help companies protect their applications and data against hackers and attacks.
                   </Text>
                 </Box>
-                <Box
-                  mb={4}>
+                <Box mb={0}>
                   <Text
                     as='summary'
                     sx={{
@@ -175,6 +187,7 @@ const IndexPage = ({ data }) => {
                       fontFamily: `sans`,
                       fontSize: 1,
                       lineHeight: `comfortable`,
+                      mb: 0,
                     }}>
                     As  Director of UX for American Public Media and KPCC, I led design and engineering. I helped define product strategy, and shipped flagship products and award-winning editorial projects.
                   </Text>
@@ -184,13 +197,16 @@ const IndexPage = ({ data }) => {
         </Box>
         <Box
           bg='grays.6'
-          sx={{ py: 6 }}
+          sx={{ py: [5, 6, 6]}}
           as='section' >
             <Grid
               gap={3}
               columns={[8]}
-              sx={{ mx: 3, maxWidth: '820px' }}>
-              <Box sx={{ gridColumn: '2 / 9' }}>
+              sx={{ mx: ["21px", 5, 3], maxWidth: '820px' }}>
+              <Box
+                sx={{ 
+                  gridColumn:['1 / 9', '1 / 9', '2 / 9'],
+                }}>
                 <Heading
                   as='h3'
                   sx={{
@@ -206,7 +222,7 @@ const IndexPage = ({ data }) => {
                 </Heading>
                 <Grid
                 gap={3}
-                columns={[2]}>
+                columns={[1, 1, 2]}>
                   {articles.map(({ node }) => {
                   return (
                     <Box mb={0}>
@@ -261,8 +277,8 @@ const IndexPage = ({ data }) => {
           <Grid
             gap={3}
             columns={[8]}
-            sx={{ mx: 3, maxWidth: '820px' }}>
-            <Box sx={{ gridColumn: '2 / 9' }}>
+            sx={{ mx: ["21px", 5, 3], maxWidth: '820px' }}>
+            <Box sx={{ gridColumn: ['1 / 9', '1 / 9', '2 / 9'] }}>
               <Flex>
                 <Link
                   href="/"
