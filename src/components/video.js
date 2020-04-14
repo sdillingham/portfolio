@@ -13,6 +13,7 @@ const Video = ({ src, borderColor }) => {
     return (
       <video
         style={styles}
+        className="videoDesktop"
         autoplay="true" 
         loop="true">
           <source src={src} type="video/mp4" />

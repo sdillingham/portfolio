@@ -14,6 +14,7 @@ const VideoMobile = ({ src, borderColor }) => {
     return (
       <video
         style={styles}
+        className="videoMobile"
         controls="true"
         preload="metadata">
           <source src={src} type="video/mp4" />
