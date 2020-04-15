@@ -30,94 +30,108 @@ const APMPage = () => (
     <Box
       sx={{
         backgroundColor: "grays.6",
-        pt: 9,
+        pt: [5, 9, 9],
         pb: 5,
       }}>
-      <Grid gap={3} columns={[12]} sx={{ mx: "auto", maxWidth: "1244px" }}>
-        <Box
-          sx={{
-            gridColumn: "3 / 11",
-          }}
-        >
-          <Heading sx={{ variant: "headings.workH1" }}>American Public Media</Heading>
-        </Box>
-        <Box
-          sx={{
-            mb: 5,
-            mt: -2,
-            gridColumn: "3 / 9",
-          }}
-        >
-          <Text
+      <Container
+      sx={{
+        maxWidth: "1300px",
+        px: ["21px", 4, 3],
+        width: "auto",
+      }}>
+        <Grid gap={3} columns={[12]}>
+          <Box
             sx={{
-              variant: "texts.workSubheadLight",
+              gridColumn: ["1 / 13", "1 / 13", "3 / 11"],
             }}
           >
-            Designing flagship products and award-winning editorial projects
-          </Text>
-        </Box>
-        <Box
-          sx={{
-            gridColumn: "3 / 5",
-          }}
-        >
-          <Text color="slates.2" sx={{ mb: 1, variant: "texts.metadata" }}>
-            My Role
-          </Text>
-          <Text color="grays.3" sx={{ mb: 1, variant: "texts.metadata" }}>
-            Director of UX
-          </Text>
-          <Text color="grays.3" sx={{ mb: 4, variant: "texts.metadata" }}>
-            2011 - 2016
-          </Text>
-          <Text color="slates.2" sx={{ mb: 1, variant: "texts.metadata" }}>
-            Design Team
-          </Text>
-          <Text sx={{ mb: 1, variant: "texts.metadata" }}>
-            <Link href="https://www.katie-briggs.com/" color="grays.3">Katie Briggs</Link>
-          </Text>
-          <Text color="grays.3" sx={{ mb: 1, variant: "texts.metadata" }}>
-            <Link href="https://jonwhitestudio.com/" color="grays.3">Jon White</Link>
-          </Text>
-        </Box>
-        <Box
-          sx={{
-            gridColumn: "6 / 11",
-          }}
-        >
-          <Text sx={{ variant: "texts.workDescription" }}>
-            <p>American Public Media is a public radio powerhouse. It produces popular programs like Marketplace, Dinner Party Download, and The Splendid Table. APM also owns Southern California Public Radio (KPCC), the second largest newsroom in Los Angeles and one of the most listened-to public radio stations in the U.S.</p>
-            <p>In 2011, I joined KPCC to lead product design and engineering. I redesigned KPCC's website, designed native apps for iPhone and iPad, and led the creation of a custom CMS and innovative live streaming server. Later I focused on leading UX across all of American Public Media, leading design for APM's national investigative unit, APM Reports.</p>
-          </Text>
-        </Box>
-      </Grid>
-    </Box>
-    <Box backgroundColor="grays.0" py="6">
-      <Grid gap={3} columns={[12]} sx={{ mx: "auto", maxWidth: "1244px" }}>
-        <Box
-          sx={{
-            gridColumn: "3 / 11",
-          }}>
-          <Heading sx={{ variant: "headings.workH2" }}>Audience Products</Heading>
-        </Box>
-        <Box
-          sx={{
-            mt: -2,
-            gridColumn: "3 / 9",
-          }}>
-          <Text
+            <Heading sx={{ variant: "headings.workH1" }}>American Public Media</Heading>
+          </Box>
+          <Box
             sx={{
-              mb: 5,
-              variant: "texts.workSubheadDark",
+              mb: [3, 5, 5],
+              mt: -2,
+              gridColumn: ["1 / 13", "1 / 9", "3 / 9"],
+            }}
+          >
+            <Text
+              sx={{
+                variant: "texts.workSubheadLight",
+              }}
+            >
+              Designing flagship products and award-winning editorial projects
+            </Text>
+          </Box>
+          <Box
+            sx={{
+              gridColumn: ["1 /13", "1 / 4", "3 / 5"],
+            }}
+          >
+            <Text color="slates.2" sx={{ mb: 1, variant: "texts.metadata" }}>
+              My Role
+            </Text>
+            <Text color="grays.3" sx={{ mb: 1, variant: "texts.metadata" }}>
+              Director of UX
+            </Text>
+            <Text color="grays.3" sx={{ mb: 4, variant: "texts.metadata" }}>
+              2011 - 2016
+            </Text>
+            <Text color="slates.2" sx={{ mb: 1, variant: "texts.metadata" }}>
+              Design Team
+            </Text>
+            <Text sx={{ mb: 1, variant: "texts.metadata" }}>
+              <Link href="https://www.katie-briggs.com/" color="grays.3">Katie Briggs</Link>
+            </Text>
+            <Text color="grays.3" sx={{ mb: 1, variant: "texts.metadata" }}>
+              <Link href="https://jonwhitestudio.com/" color="grays.3">Jon White</Link>
+            </Text>
+          </Box>
+          <Box
+            sx={{
+              gridColumn: ["1 / 13", "4 / 13", "6 / 11"],
+            }}
+          >
+            <Text sx={{ variant: "texts.workDescription" }}>
+              <p>American Public Media is a public radio powerhouse. It produces popular programs like Marketplace, Dinner Party Download, and The Splendid Table. APM also owns Southern California Public Radio (KPCC), the second largest newsroom in Los Angeles and one of the most listened-to public radio stations in the U.S.</p>
+              <p>In 2011, I joined KPCC to lead product design and engineering. I redesigned KPCC's website, designed native apps for iPhone and iPad, and led the creation of a custom CMS and innovative live streaming server. Later I focused on leading UX across all of American Public Media, leading design for APM's national investigative unit, APM Reports.</p>
+            </Text>
+          </Box>
+        </Grid>
+      </Container>
+    </Box>
+    <Box backgroundColor="grays.0" sx={{ py: [5, 6, 6] }}>
+      <Container
+        sx={{
+          maxWidth: "1300px",
+          px: ["21px", 4, 3],
+          width: "auto",
+        }}>
+        <Grid gap={3} columns={[12]}>
+          <Box
+            sx={{
+              gridColumn: ["1 / 13", "1 / 13", "3 / 11"],
             }}>
-            Designing new ways for Angelenos to connect to the public radio station they love
-          </Text>
-          <Text sx={{ variant: "texts.workBodyDark" }}>
-            <p>Public radio is not a number on your radio dial. Public radio is an ethos. It's a way of viewing the world with curiosity and care. I joined KPCC at a pivotal moment when the company aspired to become as essential on digital platforms as they were on broadcast radio.</p>
-            <p>I was responsible for defining, designing, and leading the development of KPCC's core audience product offerings – our websites, mobile apps, and digital listening experiences. During my time at KPCC, I shipped multiple new native apps and websites, redesigned legacy websites, and launched new revenue products for both membership and corporate underwriting.</p>
-          </Text>
-        </Box>
-      </Grid>
+            <Heading sx={{ variant: "headings.workH2" }}>Audience Products</Heading>
+          </Box>
+          <Box
+            sx={{
+              mt: -2,
+              gridColumn: ["1 / 13", "1 / 9", "3 / 9"],
+            }}>
+            <Text
+              sx={{
+                mb: [3, 5, 5],
+                variant: "texts.workSubheadDark",
+              }}>
+              Designing new ways for Angelenos to connect to the public radio station they love
+            </Text>
+            <Text sx={{ variant: "texts.workBodyDark" }}>
+              <p>Public radio is not a number on your radio dial. Public radio is an ethos. It's a way of viewing the world with curiosity and care. I joined KPCC at a pivotal moment when the company aspired to become as essential on digital platforms as they were on broadcast radio.</p>
+              <p>I was responsible for defining, designing, and leading the development of KPCC's core audience product offerings – our websites, mobile apps, and digital listening experiences. During my time at KPCC, I shipped multiple new native apps and websites, redesigned legacy websites, and launched new revenue products for both membership and corporate underwriting.</p>
+            </Text>
+          </Box>
+        </Grid>
+      </Container>
     </Box>
     <Box backgroundColor="grays.1" sx={{ variant: "boxes.card" }}>
       <Container
@@ -126,7 +140,7 @@ const APMPage = () => (
           width: "auto",
         }}>
         <Text
-          sx={{ color: "grays.4", mb: 1, ml: 3, variant: "texts.metadata" }}>
+          sx={{ color: "grays.4", mb: 1, ml: [0, 3, 3], variant: "texts.metadata" }}>
           Redesigned Story Pages
         </Text>
         <Image 
@@ -142,7 +156,7 @@ const APMPage = () => (
           width: "auto",
         }}>
         <Text
-          sx={{ color: "grays.4", mb: 1, ml: 3, variant: "texts.metadata" }}>
+          sx={{ color: "grays.4", mb: 1, ml: [0, 3, 3], variant: "texts.metadata" }}>
           Redesigned Show Pages
         </Text>
         <Image 
@@ -166,7 +180,7 @@ const APMPage = () => (
       <Grid gap={3} columns={[12]} sx={{ mx: "auto", maxWidth: "1244px" }}>
         <Box
         sx={{
-            gridColumn: "4 / 10",
+            gridColumn: ["1 / 13", "4 / 10", "4 / 10"],
           }}>
           <Text
             sx={{ color: "grays.4", mb: 1, textAlign: "center", variant: "texts.metadata" }}>
@@ -175,7 +189,7 @@ const APMPage = () => (
         </Box>
         <Box
           sx={{
-            gridColumn: "4 / 7",
+            gridColumn: ["1 / 13", "4 / 7", "4 / 7"],
           }}>
           <Image 
             src={iphoneLive}
@@ -184,7 +198,7 @@ const APMPage = () => (
         </Box>
         <Box
           sx={{
-            gridColumn: "7 / 10",
+            gridColumn: ["1 / 13", "7 / 10", "7 / 10"],
           }}>
           <Image 
             src={iphoneSegment}
@@ -197,7 +211,7 @@ const APMPage = () => (
       <Grid gap={3} columns={[12]} sx={{ mx: "auto", maxWidth: "1244px" }}>
         <Box
         sx={{
-            gridColumn: "4 / 10",
+            gridColumn: ["1 / 13", "4 / 10", "4 / 10"],
           }}>
           <Text
             sx={{ color: "grays.4", mb: 1, textAlign: "center", variant: "texts.metadata" }}>
@@ -206,7 +220,7 @@ const APMPage = () => (
         </Box>
         <Box
           sx={{
-            gridColumn: "4 / 7",
+            gridColumn: ["1 / 13", "4 / 7", "4 / 7"],
           }}>
           <Image 
             src={iphoneProgram}
@@ -215,7 +229,7 @@ const APMPage = () => (
         </Box>
         <Box
           sx={{
-            gridColumn: "7 / 10",
+            gridColumn: ["1 / 13", "7 / 10", "7 / 10"],
           }}>
           <Image 
             src={iphoneScrubber}
@@ -242,7 +256,7 @@ const APMPage = () => (
           width: "auto",
         }}>
         <Text
-          sx={{ color: "grays.4", mb: 1, ml: 3, variant: "texts.metadata" }}>
+          sx={{ color: "grays.4", mb: 1, ml: [0, 3, 3], variant: "texts.metadata" }}>
           APM Reports: Homepage
         </Text>
         <Image 
@@ -258,7 +272,7 @@ const APMPage = () => (
           width: "auto",
         }}>
         <Text
-          sx={{ color: "grays.4", mb: 1, ml: 3, variant: "texts.metadata" }}>
+          sx={{ color: "grays.4", mb: 1, ml: [0, 3, 3], variant: "texts.metadata" }}>
           APM Reports: Feature Pages
         </Text>
         <Image 
@@ -273,32 +287,39 @@ const APMPage = () => (
           sx={{ variant: "images.full" }}
       />
     </Box>
-    <Box backgroundColor="grays.0" py="6" sx={{ variant: "boxes.wrapper" }}>
-      <Grid gap={3} columns={[12]} sx={{ mx: "auto", maxWidth: "1244px" }}>
-        <Box
-          sx={{
-            gridColumn: "3 / 11",
-          }}>
-          <Heading sx={{ variant: "headings.workH2" }}>Publishing Platform</Heading>
-        </Box>
-        <Box
-          sx={{
-            mt: -2,
-            gridColumn: "3 / 9",
-          }}>
-          <Text
+    <Box backgroundColor="grays.0" sx={{ py: [5, 6, 6], variant: "boxes.wrapper" }}>
+      <Container
+        sx={{
+          maxWidth: "1300px",
+          px: ["21px", 4, 3],
+          width: "auto",
+        }}>
+        <Grid gap={3} columns={[12]}>
+          <Box
             sx={{
-              mb: 5,
-              variant: "texts.workSubheadDark",
+              gridColumn: ["1 / 13", "1 / 13", "3 / 11"],
             }}>
-            Reimagining publishing systems for the needs of a modern newsroom
-          </Text>
-          <Text sx={{ variant: "texts.workBodyDark" }}>
-            <p>At KPCC, we see the CMS as “the box of all that’s possible.” It’s also the tool that our reporters and editors spends their entire day in, so we built our publishing platform from the ground up, tailored to their specific needs. Since 2012, all of our websites have been powered by a custom Rails engine we call Outpost. In an industry where most newsrooms hate their CMS, we’re proud of the fact that KPCC’s editorial staff find Outpost a pleasure to use.</p>
-            <p>And since KPCC is know for great live radio, we looked for opportunities to innovate in live streaming, a space where the tech had stagnated for years. We built our own Node.js-based streaming server, StreamMachine, the first open source project that brought DVR-style replay and rewind to live radio. KPCC was the first public radio station to allow listeners options like "play the current program from its start", or "play the 9am broadcast." Our idea was so compelling that other stations followed suit, and the biggest vendor in the industry even copied our tech and turned it into part of their flagship service offering. </p>
-          </Text>
-        </Box>
-      </Grid>
+            <Heading sx={{ variant: "headings.workH2" }}>Publishing Platform</Heading>
+          </Box>
+          <Box
+            sx={{
+              mt: -2,
+              gridColumn: ["1 / 13", "1 / 9", "3 / 9"],
+            }}>
+            <Text
+              sx={{
+                mb: [3, 5, 5],
+                variant: "texts.workSubheadDark",
+              }}>
+              Reimagining publishing systems for the needs of a modern newsroom
+            </Text>
+            <Text sx={{ variant: "texts.workBodyDark" }}>
+              <p>At KPCC, we see the CMS as “the box of all that’s possible.” It’s also the tool that our reporters and editors spends their entire day in, so we built our publishing platform from the ground up, tailored to their specific needs. Since 2012, all of our websites have been powered by a custom Rails engine we call Outpost. In an industry where most newsrooms hate their CMS, we’re proud of the fact that KPCC’s editorial staff find Outpost a pleasure to use.</p>
+              <p>And since KPCC is know for great live radio, we looked for opportunities to innovate in live streaming, a space where the tech had stagnated for years. We built our own Node.js-based streaming server, StreamMachine, the first open source project that brought DVR-style replay and rewind to live radio. KPCC was the first public radio station to allow listeners options like "play the current program from its start", or "play the 9am broadcast." Our idea was so compelling that other stations followed suit, and the biggest vendor in the industry even copied our tech and turned it into part of their flagship service offering. </p>
+            </Text>
+          </Box>
+        </Grid>
+      </Container>
     </Box>
     <Box backgroundColor="grays.1" sx={{ variant: "boxes.card" }}>
       <Container
@@ -307,7 +328,7 @@ const APMPage = () => (
           width: "auto",
         }}>
         <Text
-          sx={{ color: "grays.4", mb: 1, ml: 3, variant: "texts.metadata" }}>
+          sx={{ color: "grays.4", mb: 1, ml: [0, 3, 3], variant: "texts.metadata" }}>
           Outpost: Article Editor
         </Text>
         <Image 
@@ -323,7 +344,7 @@ const APMPage = () => (
           width: "auto",
         }}>
         <Text
-          sx={{ color: "grays.4", mb: 1, ml: 3, variant: "texts.metadata" }}>
+          sx={{ color: "grays.4", mb: 1, ml: [0, 3, 3], variant: "texts.metadata" }}>
           Outpost: Collaboration & Comments
         </Text>
         <Image 
@@ -332,32 +353,39 @@ const APMPage = () => (
         />
       </Container>
     </Box>
-    <Box backgroundColor="grays.0" py="6" sx={{ variant: "boxes.wrapper" }}>
-      <Grid gap={3} columns={[12]} sx={{ mx: "auto", maxWidth: "1244px" }}>
-        <Box
-          sx={{
-            gridColumn: "3 / 11",
-          }}>
-          <Heading sx={{ variant: "headings.workH2" }}>Editorial Projects</Heading>
-        </Box>
-        <Box
-          sx={{
-            mt: -2,
-            gridColumn: "3 / 9",
-          }}>
-          <Text
+    <Box backgroundColor="grays.0" sx={{ py: [5, 6, 6], variant: "boxes.wrapper" }}>
+      <Container
+        sx={{
+          maxWidth: "1300px",
+          px: ["21px", 4, 3],
+          width: "auto",
+        }}>
+        <Grid gap={3} columns={[12]}>
+          <Box
             sx={{
-              mb: 5,
-              variant: "texts.workSubheadDark",
+              gridColumn: ["1 / 13", "1 / 13", "3 / 11"],
             }}>
-            Elevating important stories with bespoke design
-          </Text>
-          <Text sx={{ variant: "texts.workBodyDark" }}>
-            <p>There's good journalism, and there's journalism that changes things. Journalism that impacts policy, inspires change, holds the powerful accountable, or helps the public make better decisions.</p>
-            <p>At KPCC I designed and provided creative direction on multiple special editorial projects. These bespoke projects gave us a chance to think expansively about how to use design as a way to tell stories. Our work won multiple awards, made national headlines, and helped changed the public conversation about important issues.</p>
-          </Text>
-        </Box>
-      </Grid>
+            <Heading sx={{ variant: "headings.workH2" }}>Editorial Projects</Heading>
+          </Box>
+          <Box
+            sx={{
+              mt: -2,
+              gridColumn: ["1 / 13", "1 / 9", "3 / 9"],
+            }}>
+            <Text
+              sx={{
+                mb: 5,
+                variant: "texts.workSubheadDark",
+              }}>
+              Elevating important stories with bespoke design
+            </Text>
+            <Text sx={{ variant: "texts.workBodyDark" }}>
+              <p>There's good journalism, and there's journalism that changes things. Journalism that impacts policy, inspires change, holds the powerful accountable, or helps the public make better decisions.</p>
+              <p>At KPCC I designed and provided creative direction on multiple special editorial projects. These bespoke projects gave us a chance to think expansively about how to use design as a way to tell stories. Our work won multiple awards, made national headlines, and helped changed the public conversation about important issues.</p>
+            </Text>
+          </Box>
+        </Grid>
+      </Container>
     </Box>
     <Box backgroundColor="grays.1" sx={{ variant: "boxes.card" }}>
       <Container
@@ -366,7 +394,7 @@ const APMPage = () => (
           width: "auto",
         }}>
         <Text
-          sx={{ color: "grays.4", mb: 1, ml: 3, variant: "texts.metadata" }}>
+          sx={{ color: "grays.4", mb: 1, ml: [0, 3, 3], variant: "texts.metadata" }}>
           AudioVision: Story Pages
         </Text>
         <Image 
@@ -382,7 +410,7 @@ const APMPage = () => (
           width: "auto",
         }}>
         <Text
-          sx={{ color: "grays.4", mb: 1, ml: 3, variant: "texts.metadata" }}>
+          sx={{ color: "grays.4", mb: 1, ml: [0, 3, 3], variant: "texts.metadata" }}>
           AudioVision: Landing Pages
         </Text>
         <Image 
@@ -409,7 +437,7 @@ const APMPage = () => (
           width: "auto",
         }}>
         <Text
-          sx={{ color: "grays.4", mb: 1, ml: 3, variant: "texts.metadata" }}>
+          sx={{ color: "grays.4", mb: 1, ml: [0, 3, 3], variant: "texts.metadata" }}>
           Fire Tracker: Homepage
         </Text>
         <Image 
@@ -425,7 +453,7 @@ const APMPage = () => (
           width: "auto",
         }}>
         <Text
-          sx={{ color: "grays.4", mb: 1, ml: 3, variant: "texts.metadata" }}>
+          sx={{ color: "grays.4", mb: 1, ml: [0, 3, 3], variant: "texts.metadata" }}>
           Fire Tracker: Incident Page
         </Text>
         <Image 
@@ -453,7 +481,7 @@ const APMPage = () => (
           width: "auto",
         }}>
         <Text
-          sx={{ color: "grays.4", mb: 1, ml: 3, variant: "texts.metadata" }}>
+          sx={{ color: "grays.4", mb: 1, ml: [0, 3, 3], variant: "texts.metadata" }}>
           Officer Involved: Visual Narrrative
         </Text>
         <Image 
@@ -469,7 +497,7 @@ const APMPage = () => (
           width: "auto",
         }}>
         <Text
-          sx={{ color: "grays.4", mb: 1, ml: 3, variant: "texts.metadata" }}>
+          sx={{ color: "grays.4", mb: 1, ml: [0, 3, 3], variant: "texts.metadata" }}>
           Officer Involved: Long Form Articles
         </Text>
         <Image 
@@ -478,46 +506,53 @@ const APMPage = () => (
         />
       </Container>
     </Box>
-    <Box backgroundColor="grays.0" py="6" sx={{ variant: "boxes.wrapper" }}>
-      <Grid gap={3} columns={[12]} sx={{ mx: "auto", maxWidth: "1244px" }}>
-        <Box
-          sx={{
-            gridColumn: "3 / 11",
-          }}>
-          <Heading sx={{ variant: "headings.workH2" }}>The Team</Heading>
-        </Box>
-        <Box
-          sx={{
-            mt: -2,
-            gridColumn: "3 / 9",
-          }}>
-          <Text
+    <Box backgroundColor="grays.0" sx={{ py: [5, 6, 6], variant: "boxes.wrapper" }}>
+      <Container
+        sx={{
+          maxWidth: "1300px",
+          px: ["21px", 4, 3],
+          width: "auto",
+        }}>
+        <Grid gap={3} columns={[12]}>
+          <Box
             sx={{
-              mb: 5,
-              variant: "texts.workSubheadDark",
+              gridColumn: ["1 / 13", "1 / 13", "3 / 11"],
             }}>
-            Finding great talent to work together on a great mission
-          </Text>
-          <Text sx={{ variant: "texts.workBodyDark" }}>
-            <p>Working at KPCC gave me the opportunity to hone my hiring skills. From 2011-2016, I hired all the designers and engineers at KPCC, finding talented people who wanted to apply their craft to a public service mission.</p>
-            <p>My vision was to create great products delivering inspiring journalism to all Angelinos. But with modest resources, I had to build a team that could punch above its weight. During my five years at KPCC, I built one of the strongest product teams in public media, in part by embracing distributed teams and hiring outside the L.A. market. The people I hired eventually went on to work at companies like NPR, Square, Microsoft, Zillow, Tinder, Disney, and PayPal.</p>
-          </Text>
-        </Box>
-        <Box
-          sx={{
-            gridColumn: "3 / 11",
-            mb: 7,
-          }}>
-          <Grid gap={3} columns={[2]}>
-            <Box>
-              <Image src={brandsOne} />
-            </Box>
-            <Box>
-              <Image src={brandsTwo} />
-            </Box>
-          </Grid>
-        </Box>
-      </Grid>
+            <Heading sx={{ variant: "headings.workH2" }}>The Team</Heading>
+          </Box>
+          <Box
+            sx={{
+              mt: -2,
+              gridColumn: ["1 / 13", "1 / 9", "3 / 9"],
+            }}>
+            <Text
+              sx={{
+                mb: 5,
+                variant: "texts.workSubheadDark",
+              }}>
+              Finding great talent to work together on a great mission
+            </Text>
+            <Text sx={{ variant: "texts.workBodyDark" }}>
+              <p>Working at KPCC gave me the opportunity to hone my hiring skills. From 2011-2016, I hired all the designers and engineers at KPCC, finding talented people who wanted to apply their craft to a public service mission.</p>
+              <p>My vision was to create great products delivering inspiring journalism to all Angelinos. But with modest resources, I had to build a team that could punch above its weight. During my five years at KPCC, I built one of the strongest product teams in public media, in part by embracing distributed teams and hiring outside the L.A. market. The people I hired eventually went on to work at companies like NPR, Square, Microsoft, Zillow, Tinder, Disney, and PayPal.</p>
+            </Text>
+          </Box>
+          <Box
+            sx={{
+              gridColumn: ["1 / 13", "1 / 13", "3 / 11"],
+              mb: [3, 7, 7],
+            }}>
+            <Grid gap={3} columns={[1, 2, 2]}>
+              <Box>
+                <Image src={brandsOne} />
+              </Box>
+              <Box>
+                <Image src={brandsTwo} />
+              </Box>
+            </Grid>
+          </Box>
+        </Grid>
+      </Container>
     </Box>
 
     <WorkFooter />

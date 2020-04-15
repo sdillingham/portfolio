@@ -156,7 +156,7 @@ export default {
     full: {
       display: "block",
       width: "100%",
-      height: "100vh",
+      height: ["auto", "100vh", "100vh"],
       objectFit: "cover",
       objectPosition: "top center",
     }
