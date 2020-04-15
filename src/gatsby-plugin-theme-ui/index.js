@@ -132,6 +132,10 @@ export default {
       position: "sticky",
       top: "-1000%",
     },
+    scrollBox: {
+      overflowX: ["scroll", "auto", "auto"],
+      width: "100%",
+    }
   },
   images: {
     desktop: {
@@ -152,6 +156,11 @@ export default {
       borderWidth: "28px 7px",
       borderRadius: "28px",
       display: "block",
+    },
+    overflow: {
+      height: ["50vh", "auto", "auto"],
+      maxWidth: ["inherit", "100%", "100%"], 
+      width: "auto",
     },
     full: {
       display: "block",
