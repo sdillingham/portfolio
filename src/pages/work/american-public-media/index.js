@@ -26,7 +26,7 @@ import SEO from "../../../components/seo"
 
 const APMPage = () => (
   <Layout>
-    <SEO title="American Public Media" description="A case study: designing flagship products and award-winning editorial projects." />
+    <SEO title="American Public Media" description="A case study: designing flagship products and award winning editorial projects." />
     <Box
       sx={{
         backgroundColor: "grays.6",
@@ -56,7 +56,7 @@ const APMPage = () => (
               sx={{
                 variant: "texts.workSubheadLight",
               }}>
-              Designing flagship products and award-winning editorial projects
+              Designing flagship products and award winning editorial projects
             </Text>
           </Box>
           <Box
@@ -166,7 +166,7 @@ const APMPage = () => (
           maxWidth: "608px",
         }}>
         <Text sx={{ variant: "texts.cardText"}}>
-          <p>In 2014, KPCC set out to build a new iOS app with the goal of garnering an equally devoted smartphone audience. With so many options for listening on smartphones, making an iPhone app that felt indispensable was a high bar to reach for.</p>
+          <p>In 2014, KPCC set out to build a <a href="https://sean.dillingh.am/work/kpcc-iphone/">new iOS app</a> with the goal of garnering an equally devoted smartphone audience. With so many options for listening on smartphones, making an iPhone app that felt indispensable was a high bar to reach for.</p>
           <p>We leveraged KPCC’s great audio to build an app that fits into people’s busy lives in new ways. The app lets users time shift their listening back seconds or even hours, and delivers a daily curated listening experience of short, easy-to-consume segments.</p>
         </Text>
       </Container>
@@ -239,7 +239,7 @@ const APMPage = () => (
           maxWidth: "608px",
         }}>
         <Text sx={{ variant: "texts.cardText"}}>
-          <p>In 2015, American Public Media's launched a national investigative news division, APM Reports. The Peabody-winning team of journalists publishes groundbreaking stories and podcasts, focusing on powerful institutions and people, injustice and accountability.</p>
+          <p>In 2015, American Public Media's launched a national investigative news division, <a href="https://www.apmreports.org/">APM Reports</a>. The Peabody-winning team of journalists publishes groundbreaking stories and podcasts, focusing on powerful institutions and people, injustice and accountability.</p>
           <p>I led product design and frontend development for its website. I tried to create a beautiful and flexible destination to elevate APM Reports’ hard-hitting and nationally recognized investigative journalism.</p>
         </Text>
       </Container>
@@ -309,8 +309,8 @@ const APMPage = () => (
               Reimagining publishing systems for the needs of a modern newsroom
             </Text>
             <Text sx={{ variant: "texts.workBodyDark" }}>
-              <p>At KPCC, we see the CMS as “the box of all that’s possible.” It’s also the tool that our reporters and editors spends their entire day in, so we built our publishing platform from the ground up, tailored to their specific needs. Since 2012, all of our websites have been powered by a custom Rails engine we call Outpost. In an industry where most newsrooms hate their CMS, we’re proud of the fact that KPCC’s editorial staff find Outpost a pleasure to use.</p>
-              <p>And since KPCC is know for great live radio, we looked for opportunities to innovate in live streaming, a space where the tech had stagnated for years. We built our own Node.js-based streaming server, StreamMachine, the first open source project that brought DVR-style replay and rewind to live radio. KPCC was the first public radio station to allow listeners options like "play the current program from its start", or "play the 9am broadcast." Our idea was so compelling that other stations followed suit, and the biggest vendor in the industry even copied our tech and turned it into part of their flagship service offering. </p>
+              <p>At KPCC, we see the CMS as “<a href="https://twitter.com/JohannavanEeden/status/534416060116922368">the box of all that’s possible.</a>” It’s also the tool that our reporters and editors spends their entire day in, so we built our publishing platform from the ground up, tailored to their specific needs. Since 2012, all of our websites have been powered by a custom Rails engine we call <a href="https://sean.dillingh.am/work/outpost/">Outpost</a>. In an industry where most newsrooms hate their CMS, we’re proud of the fact that KPCC’s editorial staff find Outpost a pleasure to use.</p>
+              <p>And since KPCC is know for great live radio, we looked for opportunities to innovate in live streaming, a space where the tech had stagnated for years. We built our own Node.js-based streaming server, <a href="https://github.com/StreamMachine/StreamMachine">StreamMachine</a>, the first open source project that brought DVR-style replay and rewind to live radio. KPCC was the first public radio station to allow listeners options like "play the current program from its start", or "play the 9am broadcast." Our idea was so compelling that <a href="https://www.youtube.com/watch?v=oGT_ZOzmvSA">other stations followed suit</a>, and the biggest vendor in the industry even copied our tech and turned it into part of their <a href="https://www.streamguys.com/services/sgtools/sgrewind">service offering</a>. </p>
             </Text>
           </Box>
         </Grid>
@@ -376,7 +376,7 @@ const APMPage = () => (
             </Text>
             <Text sx={{ variant: "texts.workBodyDark" }}>
               <p>There's good journalism, and there's journalism that changes things. Journalism that impacts policy, inspires change, holds the powerful accountable, or helps the public make better decisions.</p>
-              <p>At KPCC I designed and provided creative direction on multiple special editorial projects. These bespoke projects gave us a chance to think expansively about how to use design as a way to tell stories. Our work won multiple awards, made national headlines, and helped changed the public conversation about important issues.</p>
+              <p>At KPCC I designed and provided creative direction on multiple special editorial projects. These bespoke projects gave us a chance to think expansively about how to use design as a way to tell stories. Our work <a href="https://sean.dillingh.am/blog/kpcc-wins-six-editor-and-publisher-awards">won multiple awards</a>, made national headlines, and helped changed the public conversation about important issues.</p>
             </Text>
           </Box>
         </Grid>
@@ -421,7 +421,7 @@ const APMPage = () => (
         }}>
         <Text sx={{ variant: "texts.cardText"}}>
           <p>2013 was the year that California wildfires caught the world's attention. Instead of passively reporting on horrific spectacle, KPCC wanted to build a useful tool for audiences to learn about active fires and evacuation warnings.</p>
-          <p>We created Fire Tracker, automatically merging CalFire data, KPCC coverage, and relevant tweets into the best wildfire resource in the state. Fire Tracker won awards and its shareable cards were embedded in articles from CNN, the New York Times, NPR, and the Guardian.</p>
+          <p>We created <a href="https://source.opennews.org/articles/if-you-build-it-they-will-come-but/">Fire Tracker</a>, automatically merging CalFire data, KPCC coverage, and relevant tweets into the best wildfire resource in the state. Fire Tracker won awards and its shareable cards were embedded in articles from CNN, the New York Times, NPR, and the Guardian.</p>
         </Text>
       </Container>
     </Box>
@@ -465,7 +465,7 @@ const APMPage = () => (
         <Text sx={{ variant: "texts.cardText"}}>
           <p>If you live in Los Angeles, you know anecdotally that civilians are shot by police far too often. But police officials don't share data that would help the public understand the true size and shape of the problem.</p>
           <p>KPCC used District Attorney documents as a backdoor into data that answered key questions: How often do police in L.A. county shoot civilians? How frequently are unarmed people shot? (A lot.) Is race a factor?  (It is.)</p>
-          <p>Officer Involved combined interactive data, visual storytelling, and long form articles to turn this story into national news.</p>
+          <p><a href="http://projects.scpr.org/officer-involved/">Officer Involved</a> combined interactive data, visual storytelling, and long form articles to turn this story into national news.</p>
         </Text>
       </Container>
     </Box>

@@ -138,7 +138,7 @@ const WorkFooter = () => (
             mt: [-2, 0, 0],
             mb: [3, 5, 5],
           }}>
-          As Director of UX for American Public Media and KPCC, I led design and engineering. I helped define product strategy, designed all our platform products, and shipped award-winning editorial projects.
+          As Director of UX for American Public Media and KPCC, I led design and engineering. I helped define product strategy, designed all our platform products, and shipped award winning editorial projects.
           </Text>
         </Box>
         <Box

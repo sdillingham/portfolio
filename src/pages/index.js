@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Box, Flex, Grid, Heading, Image, Link, Text } from "theme-ui"
+import Img from "gatsby-image"
 import profile from "../images/img-profile.jpg"
 
 import LayoutHome from "../components/layoutHome"
@@ -189,7 +190,7 @@ const IndexPage = ({ data }) => {
                       lineHeight: `comfortable`,
                       mb: 0,
                     }}>
-                    As  Director of UX for American Public Media and KPCC, I led design and engineering. I helped define product strategy, and shipped flagship products and award-winning editorial projects.
+                    As  Director of UX for American Public Media and KPCC, I led design and engineering. I helped define product strategy, and shipped flagship products and award winning editorial projects.
                   </Text>
                 </Box>
               </Box>
@@ -372,6 +373,15 @@ export const pageQuery = graphql`
             teaser
             contentType
           }
+        }
+      }
+    }
+    file(relativePath: { eq: "img-profile.jpg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fixed(width: 491, height: 1276) {
+          ...GatsbyImageSharpFixed
         }
       }
     }

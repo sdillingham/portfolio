@@ -94,7 +94,7 @@ const APMPage = () => (
             }}>
             <Text sx={{ variant: "texts.workDescription" }}>
               <p>Signal Sciences is a powerful web security platform founded in 2014 by the practitioners who ran security at Etsy. Signal Sciences protects over 1.5 trillion requests per month across 34,000 web apps, helping brands like Datadog, Vimeo, Duo, and WeWork keep their customers’ data safe from hackers.</p>
-              <p>In 2016, I joined Signal Sciences to lead product design. I’ve hired a team of talented designers, created an environment for them to do their best work, and touched every aspect of the product. I’ve been fortunate to play a part in helping the company scale through several stages of growth.</p>
+              <p>In 2016, I joined Signal Sciences to <a href="https://www.signalsciences.com/blog/effective-product-design/">lead product design</a>. I’ve hired a team of talented designers, <a href="https://building.signalsciences.com/enterprise-design/">created an environment</a> for them to do their best work, and touched every aspect of the product. I’ve been fortunate to play a part in helping the company scale through several stages of growth.</p>
             </Text>
           </Box>
         </Grid>
@@ -185,7 +185,7 @@ const APMPage = () => (
           maxWidth: "608px",
         }}>
         <Text sx={{ variant: "texts.cardText"}}>
-          <p>In my first two years, I redesigned and simplified Signal Sciences' self-service rule building experience. Rules are composed of complex combinations of conditions and actions (image a Russian nesting doll of if-then statements), and the existing experience was incomplete and incoherent.</p>
+          <p>In my first two years, I redesigned and simplified Signal Sciences' self service rule building experience. Rules are composed of complex combinations of conditions and actions (image a Russian nesting doll of if-then statements), and the existing experience was incomplete and incoherent.</p>
           <p>I took a systems thinking approach to simplify the underling elements and interconnections that make up the feature. I also designed the rule builder interface, solving complex interaction design and UI state problems in the process.</p>
         </Text>
       </Container>
@@ -240,7 +240,7 @@ const APMPage = () => (
               Growing and empowering a high-performing team
             </Text>
             <Text sx={{ variant: "texts.workBodyDark" }}>
-              <p>As design hire number two at Signal Sciences, I've had the opportunity to recruit and build a high-performing team of seven with roles focused on product design, visual design, content strategy, and UX engineering. I challenged myself to grow as a recruiter and talent scout. I created a transparent interview process that makes candidates feel valued. I led the launch of an "inside Signal Sciences" blog that gets candidates excited about our culture and craft. I was able to lure some crazy-talented designers away from jobs at places like Squarespace and Disney to come work for an obscure security startup.</p>
+              <p>As design hire number two at Signal Sciences, I've had the opportunity to recruit and build a high-performing team of seven with roles focused on product design, visual design, content strategy, and UX engineering. I challenged myself to grow as a <a href="https://sean.dillingh.am/blog/on-hiring-designers/">recruiter and talent scout</a>. I created a transparent interview process that makes candidates feel valued. I led the launch of an "<a href="https://building.signalsciences.com/">inside Signal Sciences</a>" blog that gets candidates excited about our culture and craft. I was able to lure some crazy talented designers away from jobs at places like Squarespace and Disney to come work for an obscure security startup.</p>
               <p>To align the team around what great work looks like at Signal Sciences, I created a set of design principles that help guide our decision making and how we assess potential solutions. To set clear expectations about what it means to be a great team members, we collaboratively established a set of team values. We check in annually to iterate on our principles and values as the company grows and evolves</p>
             </Text>
           </Box>
@@ -274,8 +274,8 @@ const APMPage = () => (
               Growing careers and culture
             </Heading>
             <Text sx={{ variant: "texts.workBodyDark" }}>
-              <p>Having a shared set of values is essential to improving individual and team performance, but so is continuous feedback. I instituted weekly 1:1s and quarterly check-ins with my team to help grow their skills and their careers. We also hold weekly design reviews with the entire team, facilitated by one of our senior product designers. I've spoken and written about how to give great feedback to help designers and others inside the company level up the quality of critique.</p>
-              <p>We're a tight-knit team, but that needs nurturing and care if it's going to endure. To create a sense of belonging and psychological safety on the team, we have regular rituals that enrich our work life: "Creative Mondays," where we draw our personalities as sandwiches, try to guess song lyrics we translate into emoji, or just share creative people and things that inspire us. I also organize quarterly field trips where the design team steps away from working on a technical software product and recharges by getting out into the world and getting our hands dirty.</p>
+              <p>Having a shared set of values is essential to improving individual and team performance, but so is continuous feedback. I instituted weekly 1:1s and quarterly check-ins with my team to help grow their skills and their careers. We also hold weekly design reviews with the entire team, facilitated by one of our senior product designers. I've spoken and <a href="https://building.signalsciences.com/design-feedback/">written</a> about how to give great feedback to help designers and others inside the company level up the quality of critique.</p>
+              <p>We're a tight knit team, but that needs nurturing and care if it's going to endure. To create a sense of belonging and psychological safety on the team, we have regular rituals that enrich our work life: "<a href="https://medium.com/@itsmejon/a-list-of-creative-exercises-for-creative-teams-c43b36f9dbde">Creative Mondays</a>," where we draw our personalities as sandwiches, try to guess song lyrics we translate into emoji, or just share creative people and things that inspire us. I also organize quarterly field trips where the design team steps away from working on a technical software product and recharges by getting out into the world and getting our hands dirty.</p>
             </Text>
           </Box>
         </Grid>
@@ -324,8 +324,8 @@ const APMPage = () => (
             </Text>
             <Text sx={{ variant: "texts.workBodyDark" }}>
               <p>In my first year at Signal Sciences, I created our design system from the ground up. I established our product's design principles, visual style and copywriting voice. I designed a comprehensive Sketch component library, and worked with a talented UX Engineer to create and document a corresponding library of React components.</p>
-              <p>Our design system improved our product's consistency and our engineers' velocity, and was successful enough that Signal Sciences established a permanent cross-functional team to continue investing in our system. With a team of two product designers, a content strategist, and two UX engineers, I've shifted into a product owner role. I establish our roadmap and priorities, set the bar for quality, and balance flexibility and consistency across design and code.</p>
-              <p>In 2019, we switched to Figma, completely refreshed the visual design of our entire system, and refactored all our React components using Styled System and Styled Components. We invested heavily in content strategy, creating editorial guidelines that define our voice and tone, product glossary, grammar, mechanics, and preferred terms.</p>
+              <p>Our design system improved our product's consistency and our engineers' velocity, and was successful enough that Signal Sciences established a permanent cross-functional team to continue investing in our system. With a team of two product designers, a content strategist, and two UX engineers, I've shifted into a product owner role. I establish our roadmap and priorities, set the bar for quality, and <a href="https://building.signalsciences.com/ui-desire-paths/">balance flexibility and consistency</a> across design and code.</p>
+              <p>In 2019, we switched to Figma, completely <a href="https://building.signalsciences.com/color-design-system/">refreshed the visual design</a> of our entire system, and refactored all our React components using Styled System and Styled Components. We invested heavily in content strategy, creating editorial guidelines that define our voice and tone, product glossary, grammar, mechanics, and preferred terms.</p>
             </Text>
           </Box>
           <Box

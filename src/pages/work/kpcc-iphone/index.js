@@ -385,7 +385,7 @@ const iphonePage = () => (
               Designing microinteractions to make KPCC’s iPhone app feel polished and delightful
             </Text>
             <Text sx={{ variant: "texts.workBodyDark" }}>
-              <p>Once visual design was complete, I identified areas where comps needed to be prototyped to document detailed animations and transitions. I used Framer.js as my prototyping tool of choice. Its javascript-driven workflow allowed me to interate quickly, and also allowed me to hack real audio into the prototypes.</p>
+              <p>Once visual design was complete, I identified areas where comps needed to be prototyped to document detailed animations and transitions. I used Framer.js as my prototyping tool of choice. Its javascript-driven workflow allowed me to iterate quickly, and also allowed me to hack real audio into the prototypes.</p>
               <p>I built prototypes to communicate flows in the app where a complex set of transitions and animations needed to occur in order for the microinteractions to feel polished and delightful. I focused on the most important moments in the app: initiating and rewinding the live stream, moving between on-demand episodes, and a carefully sequenced app onboarding experience.</p>
             </Text>
           </Box>
