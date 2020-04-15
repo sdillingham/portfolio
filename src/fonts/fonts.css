@@ -2,9 +2,10 @@
   font-family: 'apercu-mono-pro';
   src: url('Apercu-Mono-Medium-Pro.eot');
   src: url('Apercu-Mono-Medium-Pro.eot?#iefix') format('embedded-opentype'),
-    url('Apercu-Mono-Medium-Pro.woff2') format('woff2'),
-    url('Apercu-Mono-Medium-Pro.woff') format('woff'),
-    url('Apercu-Mono-Medium-Pro.ttf') format('truetype');
+       url('Apercu-Mono-Medium-Pro.woff2') format('woff2'),
+       url('Apercu-Mono-Medium-Pro.woff') format('woff'),
+       url('Apercu-Mono-Medium-Pro.ttf') format('truetype');
+  font-display: swap;
   font-weight: 500;
   font-style: normal;
 }
@@ -16,6 +17,7 @@
        url('ApercuPro-Light.woff2') format('woff2'),
        url('ApercuPro-Light.woff') format('woff'),
        url('ApercuPro-Light.ttf') format('truetype');
+  font-display: swap;
   font-weight: 300;
   font-style: normal;
 }
@@ -27,6 +29,7 @@
        url('ApercuPro.woff2') format('woff2'),
        url('ApercuPro.woff') format('woff'),
        url('ApercuPro.ttf') format('truetype');
+  font-display: swap;
   font-weight: 400;
   font-style: normal;
 }
@@ -38,6 +41,7 @@
        url('ApercuPro-Italic.woff2') format('woff2'),
        url('ApercuPro-Italic.woff') format('woff'),
        url('ApercuPro-Italic.ttf') format('truetype');
+  font-display: swap;
   font-weight: 400;
   font-style: italic;
 }
@@ -49,6 +53,7 @@
        url('ApercuPro-Medium.woff2') format('woff2'),
        url('ApercuPro-Medium.woff') format('woff'),
        url('ApercuPro-Medium.ttf') format('truetype');
+  font-display: swap;
   font-weight: 500;
   font-style: normal;
 }
@@ -60,6 +65,7 @@
        url('ApercuPro-Bold.woff2') format('woff2'),
        url('ApercuPro-Bold.woff') format('woff'),
        url('ApercuPro-Bold.ttf') format('truetype');
+  font-display: swap;
   font-weight: 700;
   font-style: normal;
 }
@@ -67,7 +73,8 @@
 @font-face {
     font-family: 'canela-text';
     src: url('CanelaText-Regular.woff') format('woff'),
-      url('CanelaText-Regular.ttf') format('truetype');
+         url('CanelaText-Regular.ttf') format('truetype');
+    font-display: swap;
     font-weight: 400;
     font-style: normal;
   }
@@ -75,7 +82,8 @@
 @font-face {
     font-family: 'canela';
     src: url('Canela-Regular.woff2') format('woff2'),
-      url('Canela-Regular.woff2') format('woff2');
+         url('Canela-Regular.woff2') format('woff2');
+    font-display: swap;
     font-weight: 400;
     font-style: normal;
   }
@@ -83,7 +91,8 @@
   @font-face {
     font-family: 'canela';
     src: url('Canela-RegularItalic.woff2') format('woff2'),
-      url('Canela-RegularItalic.woff') format('woff');
+         url('Canela-RegularItalic.woff') format('woff');
+    font-display: swap;
     font-weight: 400;
     font-style: italic;
   }
@@ -91,7 +100,8 @@
   @font-face {
     font-family: 'canela';
     src: url('Canela-Medium.woff2') format('woff2'),
-      url('Canela-Medium.woff') format('woff');
+         url('Canela-Medium.woff') format('woff');
+    font-display: swap;
     font-weight: 500;
     font-style: normal;
   }
@@ -99,7 +109,8 @@
   @font-face {
     font-family: 'canela';
     src: url('Canela-MediumItalic.woff2') format('woff2'),
-      url('Canela-MediumItalic.woff') format('woff');
+         url('Canela-MediumItalic.woff') format('woff');
+    font-display: swap;
     font-weight: 500;
     font-style: italic;
   }
