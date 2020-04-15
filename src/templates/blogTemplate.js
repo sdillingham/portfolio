@@ -14,7 +14,7 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
-      <SEO title={frontmatter.title} description={frontmatter.teaser} />
+      <SEO title={frontmatter.title} />
       <Global
         styles={css`
           .postContent h2 {
