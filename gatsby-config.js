@@ -68,12 +68,6 @@ module.exports = {
         head: false,
       },
     },
-    {
-      resolve: `gatsby-plugin-s3`,
-      options: {
-        bucketName: "sean.dillingh.am",
-      },
-    },
     `gatsby-plugin-theme-ui`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
