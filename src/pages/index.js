@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => {
 
   return (
   <LayoutHome>
-    <SEO title='Home' />
+    <SEO title="Home" description="The personal website of Sean Dillingham" />
     <Header />
     <Grid
       gap={0}

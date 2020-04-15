@@ -6,7 +6,7 @@ import SEO from "../../components/seo"
 
 const WorkPage = () => (
   <Layout>
-    <SEO title="Work" />
+    <SEO title="Work" description="The personal website of Sean Dillingham" />
     <Container
       sx={{
         maxWidth: "1300px",

@@ -20,7 +20,7 @@ import SEO from "../../../components/seo"
 
 const APMPage = () => (
   <Layout>
-    <SEO title="Signal Sciences" />
+    <SEO title="Signal Sciences" description="A case study: making the world’s best web security technology accessible to every business." />
     <Box
       sx={{
         backgroundColor: "grays.6",

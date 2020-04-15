@@ -26,7 +26,7 @@ import SEO from "../../../components/seo"
 
 const APMPage = () => (
   <Layout>
-    <SEO title="American Public Media" />
+    <SEO title="American Public Media" description="A case study: designing flagship products and award-winning editorial projects." />
     <Box
       sx={{
         backgroundColor: "grays.6",
@@ -43,8 +43,7 @@ const APMPage = () => (
           <Box
             sx={{
               gridColumn: ["1 / 13", "1 / 13", "3 / 11"],
-            }}
-          >
+            }}>
             <Heading sx={{ variant: "headings.workH1" }}>American Public Media</Heading>
           </Box>
           <Box
@@ -52,21 +51,18 @@ const APMPage = () => (
               mb: [3, 5, 5],
               mt: -2,
               gridColumn: ["1 / 13", "1 / 9", "3 / 9"],
-            }}
-          >
+            }}>
             <Text
               sx={{
                 variant: "texts.workSubheadLight",
-              }}
-            >
+              }}>
               Designing flagship products and award-winning editorial projects
             </Text>
           </Box>
           <Box
             sx={{
               gridColumn: ["1 /13", "1 / 4", "3 / 5"],
-            }}
-          >
+            }}>
             <Text color="slates.2" sx={{ mb: 1, variant: "texts.metadata" }}>
               My Role
             </Text>
@@ -89,8 +85,7 @@ const APMPage = () => (
           <Box
             sx={{
               gridColumn: ["1 / 13", "4 / 13", "6 / 11"],
-            }}
-          >
+            }}>
             <Text sx={{ variant: "texts.workDescription" }}>
               <p>American Public Media is a public radio powerhouse. It produces popular programs like Marketplace, Dinner Party Download, and The Splendid Table. APM also owns Southern California Public Radio (KPCC), the second largest newsroom in Los Angeles and one of the most listened-to public radio stations in the U.S.</p>
               <p>In 2011, I joined KPCC to lead product design and engineering. I redesigned KPCC's website, designed native apps for iPhone and iPad, and led the creation of a custom CMS and innovative live streaming server. Later I focused on leading UX across all of American Public Media, leading design for APM's national investigative unit, APM Reports.</p>

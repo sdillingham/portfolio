@@ -3,7 +3,7 @@ path: "/blog/design-loop-and-the-heros-journey"
 date: "2019-09-28"
 contentType: "article"
 title: "The Design Loop and The Hero’s Journey"
-teaser: "What Joseph Campbell can teach us about design process"
+teaser: "Finding echoes of the monomyth in the design process"
 ---
 
 Signal Sciences' design team started 2020 by codifying our design process. We borrowed heavily from Buzzfeed’s [Design Loop](https://medium.com/buzzfeed-design/introducing-buzzfeeds-design-process-4fefbdcd83ea), modifying it to fit our needs:

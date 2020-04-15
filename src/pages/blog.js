@@ -17,7 +17,7 @@ const WritingPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Writing" />
+      <SEO title="Writing" description="The personal website of Sean Dillingham" />
       <Container
         sx={{
           maxWidth: "1300px",

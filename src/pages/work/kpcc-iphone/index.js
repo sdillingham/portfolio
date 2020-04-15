@@ -25,7 +25,7 @@ import SEO from "../../../components/seo"
 
 const iphonePage = () => (
   <Layout>
-    <SEO title="KPCC for iPhone" />
+    <SEO title="KPCC for iPhone" description="A case study: designing new ways for Angelinos to listen to the public radio they love." />
     <Global
       styles={css`
         @media screen and (max-width: 767px) {

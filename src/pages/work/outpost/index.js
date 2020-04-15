@@ -14,7 +14,7 @@ import SEO from "../../../components/seo"
 
 const OutpostPage = () => (
   <Layout>
-    <SEO title="Outpost CMS" />
+    <SEO title="Outpost CMS" description="A case study: Reimagining KPCC's publishing system for the needs of a modern newsroom." />
     <Global
       styles={css`
         @media screen and (max-width: 767px) {
@@ -43,8 +43,7 @@ const OutpostPage = () => (
           <Box
             sx={{
               gridColumn: ["1 / 13", "1 / 13", "3 / 11"],
-            }}
-          >
+            }}>
             <Heading sx={{ variant: "headings.workH1" }}>Outpost CMS</Heading>
           </Box>
           <Box
@@ -52,13 +51,11 @@ const OutpostPage = () => (
               mb: [3, 5, 5],
               mt: -2,
               gridColumn: ["1 / 13", "1 / 9", "3 / 9"],
-            }}
-          >
+            }}>
             <Text
               sx={{
                 variant: "texts.workSubheadLight",
-              }}
-            >
+              }}>
               Reimagining KPCC's publishing system for the needs of a modern
               newsroom
             </Text>
@@ -66,8 +63,7 @@ const OutpostPage = () => (
           <Box
             sx={{
               gridColumn: ["1 /13", "1 / 4", "3 / 5"],
-            }}
-          >
+            }}>
             <Text color="slates.2" sx={{ mb: 1, variant: "texts.metadata" }}>
               My Role
             </Text>
@@ -81,8 +77,7 @@ const OutpostPage = () => (
           <Box
             sx={{
               gridColumn: ["1 / 13", "4 / 13", "6 / 11"],
-            }}
-          >
+            }}>
             <Text sx={{ variant: "texts.workDescription" }}>
               <p>At KPCC, we see the CMS as “<a href="https://twitter.com/JohannavanEeden/status/534416060116922368">the box of all that’s possible.</a>” It’s
               also the tool that our reporters and editors spends their entire day
