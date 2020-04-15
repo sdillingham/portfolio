@@ -2,9 +2,9 @@
   font-family: 'apercu-mono-pro';
   src: url('Apercu-Mono-Medium-Pro.eot');
   src: url('Apercu-Mono-Medium-Pro.eot?#iefix') format('embedded-opentype'),
-    url('Apercu-Mono-Medium-pro.woff2') format('woff2'),
-    url('Apercu-Mono-Medium-pro.woff') format('woff'),
-    url('Apercu-Mono-Medium-pro.ttf') format('truetype');
+    url('Apercu-Mono-Medium-Pro.woff2') format('woff2'),
+    url('Apercu-Mono-Medium-Pro.woff') format('woff'),
+    url('Apercu-Mono-Medium-Pro.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
