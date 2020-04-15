@@ -52,7 +52,7 @@ const IndexPage = ({ data }) => {
                 <Heading
                   as='h1'
                   sx={{
-                    color: 0,
+                    color: `grays.0`,
                     display: ['none', 'block'],
                     fontFamily: `sans`,
                     fontSize: [0, 8, 10],
