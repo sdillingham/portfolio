@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            siteUrl
           }
         }
       }
@@ -26,6 +27,7 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const image= site.siteMetadata.siteUrl + `images/og-img.png`
 
   return (
     <Helmet
@@ -34,6 +36,7 @@ function SEO({ description, lang, meta, title }) {
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      image={`https://sean.dillingh.am/images/og-img.png`}
       meta={[
         {
           name: `description`,
@@ -46,6 +49,10 @@ function SEO({ description, lang, meta, title }) {
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:image`,
+          content: image,
         },
         {
           property: `og:type`,
