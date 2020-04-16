@@ -16,11 +16,11 @@ const VideoMobile = ({ videoSrc, posterSrc, borderColor }) => {
         style={styles}
         poster={posterSrc}
         className="videoMobile"
-        controls="true"
+        controls={true}
         preload="metadata"
         crossOrigin="anonymous">
           <source src={videoSrc} type="video/mp4" />
-          <track src="subtitles.vtt" kind="captions" srclang="en" label="English" />
+          <track src="subtitles.vtt" kind="captions" label="English" />
       </video>
   )
 }
