@@ -42,7 +42,6 @@ module.exports = {
         options: {
           custom: {
             families: [`apercu-mono-pro, apercu-pro, canela`],
-            urls: [`/src/fonts/fonts.css`],
           },
         },
       },
