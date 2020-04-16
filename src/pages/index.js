@@ -241,7 +241,7 @@ const IndexPage = ({ data }) => {
                       </Text>
                       <Heading as='h2'>
                         <Link 
-                          href={node.frontmatter.path}
+                          href={node.frontmatter.url ? node.frontmatter.url : node.frontmatter.path}
                           sx={{
                             color: `grays.2`,
                             display: `inline-block`,
@@ -372,6 +372,7 @@ export const pageQuery = graphql`
             title
             teaser
             contentType
+            url
           }
         }
       }
