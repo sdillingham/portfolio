@@ -69,6 +69,7 @@ module.exports = {
     },
     `gatsby-plugin-theme-ui`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-plugin-offline`,
       options: {
