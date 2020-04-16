@@ -17,6 +17,11 @@ import prototypeRewind from "../../../images/kpcc-iphone/iphone-rewind.mp4"
 import prototypeOnboarding from "../../../images/kpcc-iphone/iphone-onboarding.mp4"
 import prototypeSeeking from "../../../images/kpcc-iphone/iphone-seeking.mp4"
 import prototypeSwipe from "../../../images/kpcc-iphone/iphone-skip.mp4"
+import posterPreroll from "../../../images/kpcc-iphone/iphone-preroll-poster.jpg"
+import posterRewind from "../../../images/kpcc-iphone/iphone-rewind-poster.jpg"
+import posterOnboarding from "../../../images/kpcc-iphone/iphone-onboarding-poster.jpg"
+import posterSeeking from "../../../images/kpcc-iphone/iphone-seeking-poster.jpg"
+import posterSwipe from "../../../images/kpcc-iphone/iphone-skip-poster.jpg"
 
 import Layout from "../../../components/layout"
 import WorkFooter from "../../../components/workFooter"
@@ -409,7 +414,8 @@ const iphonePage = () => (
               Live Stream and Preroll Ad
             </Text>
             <VideoMobile 
-              src={prototypePreroll}
+              videoSrc={prototypePreroll}
+              posterSrc={posterPreroll}
               borderColor="#09090C"
             />
           </Box>
@@ -432,8 +438,9 @@ const iphonePage = () => (
               sx={{ color: "grays.4", mb: 1, textAlign: "center", variant: "texts.metadata" }}>
               App Onboarding
             </Text>
-            <VideoMobile 
-              src={prototypeOnboarding}
+            <VideoMobile
+              videoSrc={prototypeOnboarding}
+              posterSrc={posterOnboarding}
               borderColor="#D8D7E0"
             />
           </Box>
@@ -456,8 +463,9 @@ const iphonePage = () => (
               sx={{ color: "grays.4", mb: 1, textAlign: "center", variant: "texts.metadata" }}>
               Live Rewind Interaction
             </Text>
-            <VideoMobile 
-              src={prototypeRewind}
+            <VideoMobile
+              videoSrc={prototypeRewind}
+              posterSrc={posterRewind}
               borderColor="#09090C"
             />
           </Box>
@@ -480,8 +488,9 @@ const iphonePage = () => (
               sx={{ color: "grays.4", mb: 1, textAlign: "center", variant: "texts.metadata" }}>
               Seeking Through Episodes
             </Text>
-            <VideoMobile 
-              src={prototypeSeeking}
+            <VideoMobile
+              videoSrc={prototypeSeeking}
+              posterSrc={posterSeeking}
               borderColor="#D8D7E0"
             />
           </Box>
@@ -504,8 +513,9 @@ const iphonePage = () => (
               sx={{ color: "grays.4", mb: 1, textAlign: "center", variant: "texts.metadata" }}>
               Swipe To Next Episode
             </Text>
-            <VideoMobile 
-              src={prototypeSwipe}
+            <VideoMobile
+              videoSrc={prototypeSwipe}
+              posterSrc={posterSwipe}
               borderColor="#09090C"
             />
           </Box>

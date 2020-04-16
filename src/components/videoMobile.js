@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const VideoMobile = ({ src, borderColor }) => {
+const VideoMobile = ({ videoSrc, posterSrc, borderColor }) => {
     let styles = {
       borderColor: `${borderColor}`,
       borderStyle: `solid`,
@@ -14,11 +14,12 @@ const VideoMobile = ({ src, borderColor }) => {
     return (
       <video
         style={styles}
+        poster={posterSrc}
         className="videoMobile"
         controls="true"
         preload="metadata"
         crossOrigin="anonymous">
-          <source src={src} type="video/mp4" />
+          <source src={videoSrc} type="video/mp4" />
           <track src="subtitles.vtt" kind="captions" srclang="en" label="English" />
       </video>
   )
