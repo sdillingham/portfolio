@@ -16,7 +16,8 @@ const VideoMobile = ({ src, borderColor }) => {
         style={styles}
         className="videoMobile"
         controls="true"
-        preload="metadata">
+        preload="metadata"
+        crossOrigin="anonymous">
           <source src={src} type="video/mp4" />
           <track src="subtitles.vtt" kind="captions" srclang="en" label="English" />
       </video>

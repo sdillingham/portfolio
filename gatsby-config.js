@@ -70,7 +70,19 @@ module.exports = {
     },
     `gatsby-plugin-theme-ui`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        workboxConfig: {
+          runtimeCaching: [
+            {
+              urlPattern: /.*\.mp4/,
+              handler: `NetworkOnly`,
+            },
+          ],
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
