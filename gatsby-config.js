@@ -13,11 +13,11 @@ module.exports = {
         plugins: [
           {
             resolve: `gatsby-remark-figure-caption`,
-            options: {figureClassName: `md-figure`},
+            options: { figureClassName: `md-figure` },
           },
           {
             resolve: `gatsby-remark-images`,
-            options: {linkImagesToOriginal: false},
+            options: { linkImagesToOriginal: false },
           },
           `gatsby-remark-smartypants`,
           `gatsby-remark-responsive-iframe`,
@@ -39,12 +39,12 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-web-font-loader`,
-        options: {
-          custom: {
-            families: [`apercu-mono-pro, apercu-pro, canela`],
-          },
+      options: {
+        custom: {
+          families: [`apercu-mono-pro, apercu-pro, canela`],
         },
       },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -64,6 +64,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: `UA-48143228-1`,
+        anonymize: true,
         head: false,
       },
     },
@@ -72,8 +73,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        host: 'https://sean.dillingh.am',
-      }
+        host: "https://sean.dillingh.am",
+      },
     },
     {
       resolve: `gatsby-plugin-offline`,
