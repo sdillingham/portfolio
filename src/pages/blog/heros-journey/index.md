@@ -12,7 +12,7 @@ I'm a fan of "just enough" process, which is part of why I love the elegant simp
 
 This is a well-established way of thinking about what good design process looks like at the micro level. Lots of design and product orgs converge on a circular process that feeds back into the next iteration of the loop. As a designer I like the loop for that exact reason: it de-linearizes our process, placing the emphasis on continuous learning rather than arriving at a final destination.
 
-Since they initially shared it in 2016, Buzzfeed's design loop has been so helpful to me that I've completely internalized it. But when I went back to re-read the article recently, I noticed that Buzzfeed's loop resembles another loop I’m fond of:
+Since they initially shared it in 2016, Buzzfeed's design loop has helped me so much that I've fully internalized it. But last week when I went back to re-read the article, I noticed that Buzzfeed's loop resembles another loop I’m fond of:
 
 ![Joseph Campbell's diagram of the hero's journey](./heros-journey.png)
 
