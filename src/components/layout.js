@@ -13,7 +13,7 @@ import { Box } from "theme-ui"
 import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
-import "../fonts/fonts.css"
+import "fonts/fonts.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

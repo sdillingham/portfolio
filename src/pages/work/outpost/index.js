@@ -1,16 +1,16 @@
 import React from "react"
 import { Box, Container, Grid, Heading, Image, Text } from "theme-ui"
 import { Global, css } from '@emotion/core'
-import outpostDashboard from "../../../images/outpost/dashboard.jpg"
-import outpostComments from "../../../images/outpost/comments.jpg"
-import outpostContentbot from "../../../images/outpost/contentbot.jpg"
-import outpostNotifications from "../../../images/outpost/notifications.jpg"
-import outpostEditor from "../../../images/outpost/editor.mp4"
+import outpostDashboard from "images/outpost/dashboard.jpg"
+import outpostComments from "images/outpost/comments.jpg"
+import outpostContentbot from "images/outpost/contentbot.jpg"
+import outpostNotifications from "images/outpost/notifications.jpg"
+import outpostEditor from "images/outpost/editor.mp4"
 
-import Layout from "../../../components/layout"
-import WorkFooter from "../../../components/workFooter"
-import Video from "../../../components/video"
-import SEO from "../../../components/seo"
+import Layout from "components/layout"
+import WorkFooter from "components/workFooter"
+import Video from "components/video"
+import SEO from "components/seo"
 
 const OutpostPage = () => (
   <Layout>

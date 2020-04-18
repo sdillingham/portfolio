@@ -2,8 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Box, Container, Grid, Heading, Link, Text } from "theme-ui"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "components/layout"
+import SEO from "components/seo"
 
 const WritingPage = ({ data }) => {
   const articles = data.allMarkdownRemark.edges

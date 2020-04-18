@@ -58,6 +58,16 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
+    {
+      resolve: `gatsby-alias-imports`,
+      options: {
+        aliases: {
+          components: `src/components`,
+          fonts: `src/fonts`,
+          images: `src/images`,
+        }
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

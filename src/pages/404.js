@@ -1,8 +1,8 @@
 import React from "react"
 import { Container, Heading, Text } from "theme-ui"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "components/layout"
+import SEO from "components/seo"
 
 const NotFoundPage = () => (
   <Layout>

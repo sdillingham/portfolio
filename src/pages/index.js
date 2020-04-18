@@ -2,11 +2,11 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Box, Flex, Grid, Heading, Image, Link, Text } from "theme-ui"
 import Img from "gatsby-image"
-import profile from "../images/img-profile.jpg"
+import profile from "images/img-profile.jpg"
 
-import LayoutHome from "../components/layoutHome"
-import Header from "../components/header"
-import SEO from "../components/seo"
+import LayoutHome from "components/layoutHome"
+import Header from "components/header"
+import SEO from "components/seo"
 
 const IndexPage = ({ data }) => {
   const articles = data.allMarkdownRemark.edges

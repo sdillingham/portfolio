@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import "./layout.css"
-import "../fonts/fonts.css"
+import "fonts/fonts.css"
 
 const LayoutHome = ({ children }) => {
 
