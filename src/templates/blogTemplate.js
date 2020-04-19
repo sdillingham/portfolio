@@ -4,6 +4,7 @@ import { Global, css } from '@emotion/core'
 import { graphql } from "gatsby"
 
 import Layout from "components/layout"
+import WritingFooter from "components/writingFooter"
 import SEO from "components/seo"
 
 
@@ -255,6 +256,7 @@ export default function Template({
           </Box>
         </Grid>
       </Container>
+      <WritingFooter />
     </Layout>
   )
 }

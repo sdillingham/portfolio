@@ -15,7 +15,7 @@ const ContactPage = () => (
         width: "auto",
       }}>
       <Heading sx={{ mb: 3, variant: "headings.workH1" }}>Get in Touch</Heading>
-      <Text sx={{ mb: 5, variant: "texts.workSubheadLight" }}>👋 Drop me a line and say hi! I love to chat about design and new opportunities.</Text>
+      <Text sx={{ mb: 5, variant: "texts.workSubheadLight" }}><span role="img" aria-label="hand waving">👋</span> Drop me a line and say hi! I love to chat about design and new opportunities.</Text>
           <Container
             sx={{
               maxWidth: "600px",
