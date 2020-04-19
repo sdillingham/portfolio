@@ -26,9 +26,9 @@ const ContactPage = () => (
               action="https://formspree.io/xknvlrae"
               method="POST">
               <Label
-                htmlFor="password"
+                htmlFor="_replyto"
                 sx={{
-                  color: "slates.2",
+                  color: "grays.2",
                   mb: 1,
                   variant: "texts.formLabel",
                 }}>
@@ -41,9 +41,9 @@ const ContactPage = () => (
                 placeholder="yourname@email.com"
               />
               <Label
-                htmlFor="password"
+                htmlFor="message"
                 sx={{
-                  color: "slates.2",
+                  color: "grays.2",
                   mb: 1,
                   variant: "texts.formLabel",
                 }}>

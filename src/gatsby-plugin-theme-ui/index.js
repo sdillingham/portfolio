@@ -200,10 +200,13 @@ export default {
       borderBottomStyle: "solid",
       borderBottomWidth: "1px",
       fontFamily: "sans",
-      outlineColor: "slates.1",
+      outline: "none",
       px: 0,
       "::placeholder": {
         color: "grays.3",
+      },
+      ":focus": {
+        borderBottomColor: "grays.0",
       },
     },
     textarea: {
@@ -212,9 +215,12 @@ export default {
       borderStyle: "solid",
       borderWidth: "1px",
       fontFamily: "sans",
-      outlineColor: "slates.1",
+      outline: "none",
       "::placeholder": {
         color: "grays.3",
+      },
+      ":focus": {
+        borderColor: "grays.0",
       },
     },
   },
