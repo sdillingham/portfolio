@@ -84,6 +84,8 @@ module.exports = {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
         host: "https://sean.dillingh.am",
+        sitemap: "https://sean.dillingh.am/sitemap.xml",
+        policy: [{ userAgent: '*', allow: '/' }]
       },
     },
     {
