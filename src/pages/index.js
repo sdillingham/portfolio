@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Box, Flex, Grid, Heading, Image, Link, Text } from "theme-ui"
+import { Box, Flex, Grid, Heading, Link, Text } from "theme-ui"
 import Img from "gatsby-image"
 import profile from "images/img-profile.jpg"
 
@@ -22,17 +22,18 @@ const IndexPage = ({ data }) => {
         sx={{
           display: ['none', 'block'],
         }}>
-        <Image
-          src={profile}
-          sx={{
+        <Img
+          fluid={data.file.childImageSharp.fluid}
+          style={{
             height: `100vh`,
-            mb: 0,
-            objectFit: `cover`,
-            objectPosition: `top`,
             overflow: `hidden`,
+            marginBottom: 0,
             position: `sticky`,
             top: 0,
-            width: `100vw`,
+          }}
+          imgStyle={{
+            objectFit: `cover`,
+            objectPosition: `top`,
           }}/>
       </Box>
       <Box>
@@ -395,8 +396,8 @@ export const pageQuery = graphql`
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
-        fixed(width: 491, height: 1276) {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 700) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
