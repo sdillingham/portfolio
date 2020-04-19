@@ -114,6 +114,14 @@ export default {
       lineHeight: "standard",
       textTransform: "uppercase",
     },
+    formLabel: {
+      fontFamily: "mono",
+      fontSize: 1,
+      fontWeight: "medium",
+      letterSpacing: "comfortable",
+      lineHeight: "standard",
+      textTransform: "uppercase",
+    },
   },
   boxes: {
     card: {
@@ -168,6 +176,46 @@ export default {
       height: ["auto", "100vh", "100vh"],
       objectFit: "cover",
       objectPosition: "top center",
-    }
-  }
+    },
+  },
+  buttons: {
+    primary: {
+      backgroundColor: "han",
+      border: "none",
+      borderRadius: 0,
+      color: "grays.0",
+      cursor: "pointer",
+      fontFamily: "sans",
+      fontWeight: "bold",
+      ":hover": {
+        backgroundColor: "slates.2",
+      },
+    },
+  },
+  forms: {
+    input: {
+      border: "none",
+      borderRadius: 0,
+      borderBottomColor: "grays.3",
+      borderBottomStyle: "solid",
+      borderBottomWidth: "1px",
+      fontFamily: "sans",
+      outlineColor: "slates.1",
+      px: 0,
+      "::placeholder": {
+        color: "grays.3",
+      },
+    },
+    textarea: {
+      borderRadius: 0,
+      borderColor: "grays.3",
+      borderStyle: "solid",
+      borderWidth: "1px",
+      fontFamily: "sans",
+      outlineColor: "slates.1",
+      "::placeholder": {
+        color: "grays.3",
+      },
+    },
+  },
 }

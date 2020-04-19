@@ -324,6 +324,20 @@ const IndexPage = ({ data }) => {
                   Writing
                 </Link>
                 <Link
+                  href="/contact/"
+                  sx={{
+                  color: `grays.4`,
+                  fontFamily: `sans`,
+                  fontSize: 0,
+                  fontWeight: `medium`,
+                  letterSpacing: `wide`,
+                  mr: 3,
+                  textDecoration: `none`,
+                  textTransform: `uppercase`,
+                  }}>
+                  Contact
+              </Link>
+                <Link
                   href='/rss.xml'
                   color='grays.4'
                   sx={{
