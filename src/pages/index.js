@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Box, Flex, Grid, Heading, Link, Text } from "theme-ui"
 import Img from "gatsby-image"
-import profile from "images/img-profile.jpg"
 
 import LayoutHome from "components/layoutHome"
 import Header from "components/header"

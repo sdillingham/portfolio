@@ -14,7 +14,7 @@ const Video = ({ src, borderColor }) => {
       <video
         style={styles}
         className="videoDesktop"
-        autoplay={true} 
+        autoplay="true" 
         loop={true}
         crossOrigin="anonymous">
           <source src={src} type="video/mp4" />

@@ -1,7 +1,7 @@
-import React from "react"
-import { Box, Container, Grid, Heading, Image, Text } from "theme-ui"
+/** @jsx jsx */
+import { jsx, Box, Container, Grid, Heading, Image, Text } from "theme-ui"
+import Img from "gatsby-image"
 import { Global, css } from '@emotion/core'
-import outpostDashboard from "images/outpost/dashboard.jpg"
 import outpostComments from "images/outpost/comments.jpg"
 import outpostContentbot from "images/outpost/contentbot.jpg"
 import outpostNotifications from "images/outpost/notifications.jpg"
@@ -12,7 +12,7 @@ import WorkFooter from "components/workFooter"
 import Video from "components/video"
 import SEO from "components/seo"
 
-const OutpostPage = () => (
+const OutpostPage = ({ data }) => (
   <Layout>
     <SEO title="Outpost CMS" description="A case study: Reimagining KPCC's publishing system for the needs of a modern newsroom." />
     <Global
@@ -142,10 +142,12 @@ const OutpostPage = () => (
               sx={{ color: "grays.4", mb: 1, ml: [0, 3, 3], variant: "texts.metadata" }}>
               Article Editor
             </Text>
-            <Image 
-              src={outpostDashboard}
-              sx={{ borderColor: "grays.1", variant: "images.desktopInline" }}
-            />
+            <Img
+              fluid={data.dashboard.childImageSharp.fluid}
+              sx={{
+                borderColor: "grays.1",
+                variant: "images.desktopInline"
+              }}/>
           </Box>
         </Grid>
       </Container>
@@ -200,8 +202,10 @@ const OutpostPage = () => (
         </Text>
         <Video 
           src={outpostEditor}
-          borderColor="#F3F2F7"
-        />
+          sx={{
+            borderColor: "grays.1",
+            variant: "images.desktop"
+          }}/>
       </Container>
     </Box>
     <Box backgroundColor="grays.1" sx={{ variant: "boxes.card" }}>
@@ -265,3 +269,15 @@ const OutpostPage = () => (
 )
 
 export default OutpostPage
+
+export const pageQuery = graphql`
+  query outpostPageQuery {
+    dashboard: file(relativePath: { eq: "outpost/dashboard.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

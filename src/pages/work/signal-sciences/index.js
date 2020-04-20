@@ -1,24 +1,15 @@
-import React from "react"
-import { Box, Container, Grid, Heading, Image, Link, Text } from "theme-ui"
-import consoleWorkspace from "images/signal-sciences/console-workspace.png"
+/** @jsx jsx */
+import { jsx, Box, Container, Grid, Heading, Image, Link, Text } from "theme-ui"
+import Img from "gatsby-image"
 import consoleAgent from "images/signal-sciences/console-agent.png"
 import consoleEvent from "images/signal-sciences/console-event.png"
 import consoleRules from "images/signal-sciences/console-rules.png"
-import cultureArchery from "images/signal-sciences/culture-archery.jpg"
-import cultureBirdcall from "images/signal-sciences/culture-birdcall.jpg"
-import cultureMatching from "images/signal-sciences/culture-matching.jpg"
-import cultureThrowing from "images/signal-sciences/culture-throwing.jpg"
-import principleInsights from "images/signal-sciences/principle-insights.jpg"
-import principlePragmatic from "images/signal-sciences/principle-pragmatic.jpg"
-import principleUncertainty from "images/signal-sciences/principle-uncertainty.jpg"
-import principleVisibility from "images/signal-sciences/principle-visibility.jpg"
-import designSystems from "images/signal-sciences/design-systems.png"
 
 import Layout from "components/layout"
 import WorkFooter from "components/workFooter"
 import SEO from "components/seo"
 
-const APMPage = () => (
+const SigSciPage = ({ data }) => (
   <Layout>
     <SEO title="Signal Sciences" description="A case study: making the world’s best web security technology accessible to every business." />
     <Box
@@ -139,10 +130,12 @@ const APMPage = () => (
               sx={{ color: "grays.4", mb: 1, ml: [0, 3, 3], variant: "texts.metadata" }}>
               Workspace Dashboard
             </Text>
-            <Image 
-              src={consoleWorkspace}
-              sx={{ borderColor: "grays.1", variant: "images.desktopInline" }}
-            />
+            <Img
+              fluid={data.workspace.childImageSharp.fluid}
+              sx={{
+                borderColor: "grays.1",
+                variant: "images.desktopInline"
+              }}/>
           </Box>
         </Grid>
       </Container>
@@ -247,16 +240,16 @@ const APMPage = () => (
         </Grid>
         <Grid gap={3} columns={[1, 2, 2]} sx={{ mb: [4, 6, 6] }}>
           <Box>
-            <Image src={principlePragmatic} />
+            <Img fluid={data.principlePragmatic.childImageSharp.fluid} />
           </Box>
           <Box>
-            <Image src={principleVisibility} />
+            <Img fluid={data.principleVisibility.childImageSharp.fluid} />
           </Box>
           <Box>
-            <Image src={principleUncertainty} />
+            <Img fluid={data.principleUncertainty.childImageSharp.fluid} />
           </Box>
           <Box>
-            <Image src={principleInsights} />
+            <Img fluid={data.principleInsights.childImageSharp.fluid} />
           </Box>
         </Grid>
         <Grid gap={3} columns={[12]} sx={{ mb: [4, 6, 6] }}>
@@ -281,16 +274,16 @@ const APMPage = () => (
         </Grid>
         <Grid gap={3} columns={[1, 2, 2]}>
           <Box>
-            <Image src={cultureBirdcall} />
+            <Img fluid={data.cultureBirdcall.childImageSharp.fluid} />
           </Box>
           <Box>
-            <Image src={cultureThrowing} />
+            <Img fluid={data.cultureThrowing.childImageSharp.fluid} />
           </Box>
           <Box>
-            <Image src={cultureArchery} />
+            <Img fluid={data.cultureArchery.childImageSharp.fluid} />
           </Box>
           <Box>
-            <Image src={cultureMatching} />
+            <Img fluid={data.cultureMatching.childImageSharp.fluid} />
           </Box>
         </Grid>
       </Container>
@@ -332,7 +325,7 @@ const APMPage = () => (
             sx={{
               gridColumn: "1 / 13",
             }}>
-            <Image src={designSystems} />
+            <Img fluid={data.designSystems.childImageSharp.fluid} />
           </Box>
         </Grid>
       </Container>
@@ -343,4 +336,79 @@ const APMPage = () => (
   </Layout>
 )
 
-export default APMPage
+export default SigSciPage
+
+export const pageQuery = graphql`
+  query sigsciPageQuery {
+    workspace: file(relativePath: { eq: "signal-sciences/console-workspace.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    principleInsights: file(relativePath: { eq: "signal-sciences/principle-insights.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    principlePragmatic: file(relativePath: { eq: "signal-sciences/principle-pragmatic.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    principleUncertainty: file(relativePath: { eq: "signal-sciences/principle-uncertainty.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    principleVisibility: file(relativePath: { eq: "signal-sciences/principle-visibility.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    cultureArchery: file(relativePath: { eq: "signal-sciences/culture-archery.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    cultureBirdcall: file(relativePath: { eq: "signal-sciences/culture-birdcall.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    cultureMatching: file(relativePath: { eq: "signal-sciences/culture-matching.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    cultureThrowing: file(relativePath: { eq: "signal-sciences/culture-throwing.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    designSystems: file(relativePath: { eq: "signal-sciences/design-systems.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

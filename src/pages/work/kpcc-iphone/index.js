@@ -1,7 +1,7 @@
-import React from "react"
-import { Box, Container, Grid, Heading, Image, Text } from "theme-ui"
+/** @jsx jsx */
+import { jsx, Box, Container, Grid, Heading, Image, Text } from "theme-ui"
+import Img from "gatsby-image"
 import { Global, css } from '@emotion/core'
-import iphoneMap from "images/kpcc-iphone/iphone-map.png"
 import iphoneLive from "images/kpcc-iphone/iphone-live.jpg"
 import iphoneSegment from "images/kpcc-iphone/iphone-segment.jpg"
 import iphoneProgram from "images/kpcc-iphone/iphone-program.jpg"
@@ -28,7 +28,7 @@ import WorkFooter from "components/workFooter"
 import VideoMobile from "components/videoMobile"
 import SEO from "components/seo"
 
-const iphonePage = () => (
+const iphonePage = ({ data }) => (
   <Layout>
     <SEO title="KPCC for iPhone" description="A case study: designing new ways for Angelinos to listen to the public radio they love." />
     <Global
@@ -141,9 +141,7 @@ const iphonePage = () => (
               sx={{ color: "grays.4", mb: 1, variant: "texts.metadata" }}>
               User Journey Map - Casual listening
             </Text>
-            <Image 
-              src={iphoneMap}
-            />
+            <Img fluid={data.iphoneMap.childImageSharp.fluid} />
           </Box>
         </Grid>
       </Container>
@@ -528,3 +526,15 @@ const iphonePage = () => (
 )
 
 export default iphonePage
+
+export const pageQuery = graphql`
+  query iPhonePageQuery {
+    iphoneMap: file(relativePath: { eq: "kpcc-iphone/iphone-map.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
