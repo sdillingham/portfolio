@@ -141,7 +141,10 @@ const iphonePage = ({ data }) => (
               sx={{ color: "grays.4", mb: 1, variant: "texts.metadata" }}>
               User Journey Map - Casual listening
             </Text>
-            <Img fluid={data.iphoneMap.childImageSharp.fluid} />
+            <Img
+              fluid={data.iphoneMap.childImageSharp.fluid}
+              alt="KPCC iPhone user journey map"
+              />
           </Box>
         </Grid>
       </Container>
@@ -195,7 +198,11 @@ const iphonePage = ({ data }) => (
             Flow: Adding Favorites
           </Text>
           <Box sx={{ variant: "boxes.scrollBox" }}>
-            <Image src={flowFavorites} sx={{ variant: "images.overflow" }} />
+            <Image
+              src={flowFavorites}
+              alt="Wireframe flow: adding favorites"
+              sx={{ variant: "images.overflow" }} 
+              />
           </Box>
         </Box>
         <Box>
@@ -204,7 +211,11 @@ const iphonePage = ({ data }) => (
             Flow: Membership Appeals
           </Text>
           <Box sx={{ variant: "boxes.scrollBox" }}>
-            <Image src={flowMembership} sx={{ variant: "images.overflow" }} />
+            <Image
+              src={flowMembership}
+              alt="Wireframe flow: membership appeals"
+              sx={{ variant: "images.overflow" }}
+              />
           </Box>
         </Box>
       </Container>
@@ -232,6 +243,7 @@ const iphonePage = ({ data }) => (
             }}>
             <Image 
               src={iphoneHome}
+              alt="KPCC iPhone app home view"
               sx={{ borderColor: "grays.2", variant: "images.mobile" }}
             />
           </Box>
@@ -241,6 +253,7 @@ const iphonePage = ({ data }) => (
             }}>
             <Image 
               src={iphoneLive}
+              alt="KPCC iPhone app live stream view"
               sx={{ borderColor: "grays.2", variant: "images.mobile" }}
             />
           </Box>
@@ -270,6 +283,7 @@ const iphonePage = ({ data }) => (
             }}>
             <Image 
               src={iphoneNotifications}
+              alt="KPCC iPhone app notifications view"
               sx={{ borderColor: "grays.8", variant: "images.mobile" }}
             />
           </Box>
@@ -279,6 +293,7 @@ const iphonePage = ({ data }) => (
             }}>
             <Image 
               src={iphoneRecommendations}
+              alt="KPCC iPhone app recommendatons view"
               sx={{ borderColor: "grays.8", variant: "images.mobile" }}
             />
           </Box>
@@ -308,6 +323,7 @@ const iphonePage = ({ data }) => (
             }}>
             <Image 
               src={iphoneProgram}
+              alt="KPCC iPhone app program view"
               sx={{ borderColor: "grays.2", variant: "images.mobile" }}
             />
           </Box>
@@ -317,6 +333,7 @@ const iphonePage = ({ data }) => (
             }}>
             <Image 
               src={iphoneSegment}
+              alt="KPCC iPhone app segment view"
               sx={{ borderColor: "grays.2", variant: "images.mobile" }}
             />
           </Box>
@@ -346,6 +363,7 @@ const iphonePage = ({ data }) => (
             }}>
             <Image 
               src={iphoneSwipe}
+              alt="KPCC iPhone app swipe UI"
               sx={{ borderColor: "grays.8", variant: "images.mobile" }}
             />
           </Box>
@@ -355,6 +373,7 @@ const iphonePage = ({ data }) => (
             }}>
             <Image 
               src={iphoneScrubber}
+              alt="KPCC iPhone app scrubber UI"
               sx={{ borderColor: "grays.8", variant: "images.mobile" }}
             />
           </Box>

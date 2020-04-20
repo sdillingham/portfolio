@@ -23,6 +23,7 @@ const IndexPage = ({ data }) => {
         }}>
         <Img
           fluid={data.file.childImageSharp.fluid}
+          alt="A photo of me"
           style={{
             height: `100vh`,
             overflow: `hidden`,

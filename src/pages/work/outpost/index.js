@@ -144,6 +144,7 @@ const OutpostPage = ({ data }) => (
             </Text>
             <Img
               fluid={data.dashboard.childImageSharp.fluid}
+              alt="Outpost CMS artivle editor view"
               sx={{
                 borderColor: "grays.1",
                 variant: "images.desktopInline"
@@ -175,6 +176,7 @@ const OutpostPage = ({ data }) => (
         </Text>
         <Image 
           src={outpostNotifications}
+          alt="Outpost notifications view"
           sx={{ borderColor: "grays.1", variant: "images.desktop" }}
         />
       </Container>
@@ -231,6 +233,7 @@ const OutpostPage = ({ data }) => (
         </Text>
         <Image 
           src={outpostComments}
+          alt="Outpost comments feature"
           sx={{ borderColor: "grays.1", variant: "images.desktop" }}
         />
       </Container>
@@ -259,6 +262,7 @@ const OutpostPage = ({ data }) => (
         </Text>
         <Image 
           src={outpostContentbot}
+          alt="Outpost contentbot feature"
           sx={{ borderColor: "grays.1", variant: "images.desktop" }}
         />
       </Container>

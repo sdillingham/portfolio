@@ -140,6 +140,7 @@ const APMPage = () => (
         </Text>
         <Image 
           src={kpccStory}
+          alt="KPCC Article View"
           sx={{ borderColor: "grays.2", height: "75vh", variant: "images.desktop" }}
         />
       </Container>
@@ -156,6 +157,7 @@ const APMPage = () => (
         </Text>
         <Image 
           src={kpccProgram}
+          alt="KPCC Program View"
           sx={{ borderColor: "grays.3", height: "75vh", variant: "images.desktop" }}
         />
       </Container>
@@ -188,6 +190,7 @@ const APMPage = () => (
           }}>
           <Image 
             src={iphoneLive}
+            alt="KPCC iPhone app live stream view"
             sx={{ borderColor: "grays.2", variant: "images.mobile" }}
           />
         </Box>
@@ -197,6 +200,7 @@ const APMPage = () => (
           }}>
           <Image 
             src={iphoneSegment}
+            alt="KPCC iPhone app segment view"
             sx={{ borderColor: "grays.2", variant: "images.mobile" }}
           />
         </Box>
@@ -219,6 +223,7 @@ const APMPage = () => (
           }}>
           <Image 
             src={iphoneProgram}
+            alt="KPCC iPhone app program view"
             sx={{ borderColor: "grays.8", variant: "images.mobile" }}
           />
         </Box>
@@ -228,6 +233,7 @@ const APMPage = () => (
           }}>
           <Image 
             src={iphoneScrubber}
+            alt="KPCC iPhone app scrubber UI"
             sx={{ borderColor: "grays.8", variant: "images.mobile" }}
           />
         </Box>
@@ -256,6 +262,7 @@ const APMPage = () => (
         </Text>
         <Image 
           src={apmHomepage}
+          alt="APM Reports Homepage"
           sx={{ borderColor: "grays.2", height: "75vh", variant: "images.desktop" }}
         />
       </Container>
@@ -272,6 +279,7 @@ const APMPage = () => (
         </Text>
         <Image 
           src={apmFeature}
+          alt="APM Reports Feature Article View"
           sx={{ borderColor: "grays.8", height: "75vh", variant: "images.desktop" }}
         />
       </Container>
@@ -279,6 +287,7 @@ const APMPage = () => (
     <Box backgroundColor="grays.0" sx={{ variant: "boxes.card" }}>
       <Image 
           src={apmComponents}
+          alt="APM Reports Component Library"
           sx={{ variant: "images.full" }}
       />
     </Box>
@@ -328,6 +337,7 @@ const APMPage = () => (
         </Text>
         <Image 
           src={outpostDashboard}
+          alt="Outpost CMS Article Editor"
           sx={{ borderColor: "grays.2", height: "75vh", variant: "images.desktop" }}
         />
       </Container>
@@ -344,6 +354,7 @@ const APMPage = () => (
         </Text>
         <Image 
           src={outpostComments}
+          alt="Outpost Article Commenting Feature"
           sx={{ borderColor: "grays.3", height: "75vh", variant: "images.desktop" }}
         />
       </Container>
@@ -394,6 +405,7 @@ const APMPage = () => (
         </Text>
         <Image 
           src={audiovisionStory}
+          alt="AudioVision Article View"
           sx={{ borderColor: "grays.2", height: "75vh", variant: "images.desktop" }}
         />
       </Container>
@@ -410,6 +422,7 @@ const APMPage = () => (
         </Text>
         <Image 
           src={audiovisionLanding}
+          alt="AudioVision Landing View"
           sx={{ borderColor: "grays.3", height: "75vh", variant: "images.desktop" }}
         />
       </Container>
@@ -437,6 +450,7 @@ const APMPage = () => (
         </Text>
         <Image 
           src={firetrackerHome}
+          alt="Fire Tracker Homepage"
           sx={{ borderColor: "grays.3", height: "75vh", variant: "images.desktop" }}
         />
       </Container>
@@ -453,6 +467,7 @@ const APMPage = () => (
         </Text>
         <Image 
           src={firetrackerIncident}
+          alt="Fire Incident View"
           sx={{ borderColor: "grays.8", height: "75vh", variant: "images.desktop" }}
         />
       </Container>
@@ -481,6 +496,7 @@ const APMPage = () => (
         </Text>
         <Image 
           src={officerNarrative}
+          alt="Officer Involved Visual Narrative"
           sx={{ borderColor: "grays.8", height: "75vh", variant: "images.desktop" }}
         />
       </Container>
@@ -497,6 +513,7 @@ const APMPage = () => (
         </Text>
         <Image 
           src={officerArticle}
+          alt="Officer Involved Long Form Article View"
           sx={{ borderColor: "grays.2", height: "75vh", variant: "images.desktop" }}
         />
       </Container>
@@ -539,10 +556,16 @@ const APMPage = () => (
             }}>
             <Grid gap={3} columns={[1, 2, 2]}>
               <Box>
-                <Image src={brandsOne} />
+                <Image
+                  src={brandsOne}
+                  alt="Paypal, Tinder, and Square logos"
+                  />
               </Box>
               <Box>
-                <Image src={brandsTwo} />
+                <Image
+                  src={brandsTwo}
+                  alt="Micrisoft, NPR, and Disney logos"
+                  />
               </Box>
             </Grid>
           </Box>

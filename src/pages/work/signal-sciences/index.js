@@ -132,6 +132,7 @@ const SigSciPage = ({ data }) => (
             </Text>
             <Img
               fluid={data.workspace.childImageSharp.fluid}
+              alt="Signal Sciences Console workspace overview"
               sx={{
                 borderColor: "grays.1",
                 variant: "images.desktopInline"
@@ -152,6 +153,7 @@ const SigSciPage = ({ data }) => (
         </Text>
         <Image 
           src={consoleAgent}
+          alt="Signal Sciences Console agent detail view"
           sx={{ borderColor: "grays.8", height: "75vh", variant: "images.desktop" }}
         />
       </Container>
@@ -168,6 +170,7 @@ const SigSciPage = ({ data }) => (
         </Text>
         <Image 
           src={consoleEvent}
+          alt="Signal Sciences Console event detail view"
           sx={{ borderColor: "grays.1", height: "75vh", variant: "images.desktop" }}
         />
       </Container>
@@ -196,6 +199,7 @@ const SigSciPage = ({ data }) => (
         </Text>
         <Image 
           src={consoleRules}
+          alt="Signal Sciences Console rules editor view"
           sx={{
             borderColor: "grays.8",
             height: "75vh",
@@ -240,16 +244,28 @@ const SigSciPage = ({ data }) => (
         </Grid>
         <Grid gap={3} columns={[1, 2, 2]} sx={{ mb: [4, 6, 6] }}>
           <Box>
-            <Img fluid={data.principlePragmatic.childImageSharp.fluid} />
+            <Img
+              fluid={data.principlePragmatic.childImageSharp.fluid}
+              alt="Signal Sciences design principle: Be Pragmatic"
+              />
           </Box>
           <Box>
-            <Img fluid={data.principleVisibility.childImageSharp.fluid} />
+            <Img
+              fluid={data.principleVisibility.childImageSharp.fluid}
+              alt="Signal Sciences design principle: Champion Visibility"
+              />
           </Box>
           <Box>
-            <Img fluid={data.principleUncertainty.childImageSharp.fluid} />
+            <Img
+              fluid={data.principleUncertainty.childImageSharp.fluid}
+              alt="Signal Sciences design principle: Reduce Uncertainty"
+              />
           </Box>
           <Box>
-            <Img fluid={data.principleInsights.childImageSharp.fluid} />
+            <Img
+              fluid={data.principleInsights.childImageSharp.fluid}
+              alt="Signal Sciences design principle: Unlock Insights"
+              />
           </Box>
         </Grid>
         <Grid gap={3} columns={[12]} sx={{ mb: [4, 6, 6] }}>
@@ -274,16 +290,28 @@ const SigSciPage = ({ data }) => (
         </Grid>
         <Grid gap={3} columns={[1, 2, 2]}>
           <Box>
-            <Img fluid={data.cultureBirdcall.childImageSharp.fluid} />
+            <Img
+              fluid={data.cultureBirdcall.childImageSharp.fluid}
+              alt="Ali teaches the design team bird calls"
+              />
           </Box>
           <Box>
-            <Img fluid={data.cultureThrowing.childImageSharp.fluid} />
+            <Img
+              fluid={data.cultureThrowing.childImageSharp.fluid}
+              alt="The design team learns wheel throwing at POT LA"
+              />
           </Box>
           <Box>
-            <Img fluid={data.cultureArchery.childImageSharp.fluid} />
+            <Img
+              fluid={data.cultureArchery.childImageSharp.fluid}
+              alt="The design team learns archery in case anyone wants the logo bigger"
+              />
           </Box>
           <Box>
-            <Img fluid={data.cultureMatching.childImageSharp.fluid} />
+            <Img
+              fluid={data.cultureMatching.childImageSharp.fluid}
+              alt="The one day I wasn't in the office and everyone on the team accidentally dressed the same"
+              />
           </Box>
         </Grid>
       </Container>
@@ -325,7 +353,10 @@ const SigSciPage = ({ data }) => (
             sx={{
               gridColumn: "1 / 13",
             }}>
-            <Img fluid={data.designSystems.childImageSharp.fluid} />
+            <Img
+              fluid={data.designSystems.childImageSharp.fluid}
+              alt="Signal Sciences' component library artboards"
+              />
           </Box>
         </Grid>
       </Container>
