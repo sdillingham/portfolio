@@ -18,13 +18,13 @@ We needed a sign from our audience to point the way, to give us a star to sail o
 
 Working fast, we established a set of criteria our product validation step had to meet:
 
-- **The signal from our audience needed to be an strong indicator of committment.** It wasn't enough for them to merely say "I like this." We wanted to create a set of circumstances that emulated the kind of conversion point we'd see when we went to market (i.e., someone reads the product description in the App Store and decides whether to install it).
+- **The signal from our audience needed to be an strong indicator of commitment.** It wasn't enough for them to merely say "I like this." We wanted to create a set of circumstances that emulated the kind of conversion point we'd see when we went to market (i.e., someone reads the product description in the App Store and decides whether to install it).
 - **We wanted to test a number concepts simultaneously.** We had plenty of ideas but lacked clarity, so testing a focused set of concepts to see if there was a clear "winner" was essential to achieving focus.
 - **We had to arrive at results fast.** Given our time constraints, we had to devise a method for validating ideas with our audience that took no more than one week.
 
 ## The experiment
 
-We settled on running a remote A/B test with a sample population of our current audience, presenting them with four versions of a landing promoting our upcoming app. The design of each page was identical, but we varied the copywriting, presenting a distinct value proposition and key features for the app.
+We settled on running a remote A/B test with a sample population of our current audience, presenting them with four versions of a landing page promoting our upcoming app. The design of each page was identical, but we varied the copywriting, presenting a distinct value proposition and key features for the app.
 
 ![All four variations of our landing page experiment, each with a distinct value proposition and feature set.](./ipad-concepts.gif)
 
@@ -37,7 +37,7 @@ We crafted value propositions that melded editorial and product strategy, each o
 
 We set about designing landing pages for each of our concepts, taking care to isolate every variable we could. Each landing page got tagged with Google Analytics and contained a different Mailchimp signup form. We then set up a content experiment in GA so that we could evenly distribute traffic among our four landing pages, tracking conversions along the way.
 
-One of the keys to the experiment was presenting it to the audience without them knowing it was an experiment. We used a variety of channels: social media, website invitations, app banners and email marketing. In every case, ths messaging promised a sneak preview of our upcoming iPad app, while the landing pages offered to notify users when the app launched if they provided us with their email address. As far as our audience knew, the landing page they were seeing was the only one that existed, and if they liked what they saw, they were giving us their email address in the genuine hope that we would let them know when the app was available.
+One of the keys to the experiment was presenting it to the audience without them knowing it was an experiment. We used a variety of channels: social media, website invitations, app banners and email marketing. In every case, the messaging promised a sneak preview of our upcoming iPad app, while the landing pages offered to notify users when the app launched if they provided us with their email address. As far as our audience knew, the landing page they were seeing was the only one that existed, and if they liked what they saw, they were giving us their email address in the genuine hope that we would let them know when the app was available.
 
 ## The outcome
 
