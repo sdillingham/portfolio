@@ -2,7 +2,7 @@
 import { jsx, Box, Container, Grid, Heading, Image, Text } from "theme-ui"
 import { GatsbyImage } from "gatsby-plugin-image";
 import { graphql } from "gatsby"
-import { Global, css } from '@emotion/core'
+import { Global, css } from '@emotion/react'
 import outpostComments from "images/outpost/comments.jpg"
 import outpostContentbot from "images/outpost/contentbot.jpg"
 import outpostNotifications from "images/outpost/notifications.jpg"

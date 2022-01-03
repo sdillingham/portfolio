@@ -1,6 +1,6 @@
 import React from "react"
 import { Box, Container, Grid, Heading, Text } from "theme-ui"
-import { Global, css } from '@emotion/core'
+import { Global, css } from '@emotion/react'
 import { graphql } from "gatsby"
 
 import Layout from "components/layout"

@@ -2,7 +2,7 @@
 import { jsx, Box, Container, Grid, Heading, Image, Text } from "theme-ui"
 import { GatsbyImage } from "gatsby-plugin-image";
 import { graphql } from "gatsby"
-import { Global, css } from '@emotion/core'
+import { Global, css } from '@emotion/react'
 import iphoneLive from "images/kpcc-iphone/iphone-live.jpg"
 import iphoneSegment from "images/kpcc-iphone/iphone-segment.jpg"
 import iphoneProgram from "images/kpcc-iphone/iphone-program.jpg"

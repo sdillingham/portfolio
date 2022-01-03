@@ -22,11 +22,11 @@ import brandsTwo from "images/american-public-media/brands-2.png"
 
 import Layout from "components/layout"
 import WorkFooter from "components/workFooter"
-import SEO from "components/seo"
+import Seo from "components/seo"
 
 const APMPage = () => (
   <Layout>
-    <SEO title="American Public Media" description="A case study: designing flagship products and award winning editorial projects." />
+    <Seo title="American Public Media" description="A case study: designing flagship products and award winning editorial projects." />
     <Box
       sx={{
         backgroundColor: "grays.6",

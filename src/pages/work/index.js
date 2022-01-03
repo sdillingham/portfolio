@@ -2,11 +2,11 @@ import React from "react"
 import { Box, Container, Grid, Heading, Link, Text } from "theme-ui"
 
 import Layout from "components/layout"
-import SEO from "components/seo"
+import Seo from "components/seo"
 
 const WorkPage = () => (
   <Layout>
-    <SEO title="Work" description="The personal website of Sean Dillingham" />
+    <Seo title="Work" description="The personal website of Sean Dillingham" />
     <Container
       sx={{
         maxWidth: "1300px",

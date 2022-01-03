@@ -77,7 +77,7 @@ const WritingFooter = ({ data }) => (
   </Box>
 )
 
-export default props => (
+const props = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -99,4 +99,5 @@ export default props => (
     `}
     render={data => <WritingFooter data={data} />}
   />
-)
+);
+export default props;
