@@ -1,5 +1,5 @@
 ---
-path: "/blog/2020-listening"
+path: "/blog/2021-listening"
 date: "2021-12-31"
 contentType: "notes"
 title: "Notes: 2021 Listening"
