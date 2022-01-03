@@ -70,7 +70,47 @@ const WorkFooter = () => (
               lineHeight: `tight`,
               textTransform: `uppercase`,
             }}>
-            2016 - Present
+            2020 - Present
+            </Text>
+          <Heading
+            as='h2'>
+            <Link
+              href='/work/honey/'
+              sx={{
+                color: `grays.1`,
+                fontFamily: `sans`,
+                fontSize: 4,
+                fontWeight: `normal`,
+              }}>
+              Honey / PayPal
+            </Link>
+          </Heading>
+        </Box>
+        <Box sx={{ gridColumn: ['1 / 13', '5 / 13', '8 / 13'] }}>
+          <Text
+          sx={{
+            color: `grays.3`,
+            fontFamily: `sans`,
+            fontSize: 1,
+            lineHeight: `comfortable`,
+            mt: [-2, 0, 0],
+            mb: [3, 5, 5],
+          }}>
+            I lead a team of 15 product designers responsible for global online shopping across Honey and PayPal products.
+          </Text>
+        </Box>
+        <Box sx={{ gridColumn: ['1 / 13', '1 / 5', '5 / 8'] }}>
+          <Text
+            sx={{
+              color: `slates.2`,
+              fontFamily: `mono`,
+              fontSize: 0,
+              fontWeight: `medium`,
+              letterSpacing: `extrawide`,
+              lineHeight: `tight`,
+              textTransform: `uppercase`,
+            }}>
+            2016 - 2020
             </Text>
           <Heading
             as='h2'>
@@ -96,7 +136,7 @@ const WorkFooter = () => (
             mt: [-2, 0, 0],
             mb: [3, 5, 5],
           }}>
-          I'm currently Head of Product Design at Signal Sciences. We help companies defend their applications and data against hackers and attacks, protecting over 1.5 trillion requests each month.
+          Signal Sciences helps companies protect their applications against attacks. As Head of Design, I helped the startup scale through several stages of growth up through acquisition.
           </Text>
         </Box>
         <Box sx={{ gridColumn: ['1 / 13', '1 / 5', '5 / 8'] }}>

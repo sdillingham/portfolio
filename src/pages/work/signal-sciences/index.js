@@ -55,7 +55,7 @@ const SigSciPage = ({ data }) => (
               Head of Product Design
             </Text>
             <Text color="grays.3" sx={{ mb: 4, variant: "texts.metadata" }}>
-              2016 - Present
+              2016 - 2020
             </Text>
             <Text color="slates.2" sx={{ mb: 1, variant: "texts.metadata" }}>
               Design Team
@@ -85,7 +85,7 @@ const SigSciPage = ({ data }) => (
             }}>
             <Text sx={{ variant: "texts.workDescription" }}>
               <p>Signal Sciences is a powerful web security platform founded in 2014 by the practitioners who ran security at Etsy. Signal Sciences protects over 1.5 trillion requests per month across 34,000 web apps, helping brands like Datadog, Vimeo, Duo, and WeWork keep their customers’ data safe from hackers.</p>
-              <p>In 2016, I joined Signal Sciences to <a href="https://www.signalsciences.com/blog/effective-product-design/">lead product design</a>. I’ve hired a team of talented designers, <a href="https://building.signalsciences.com/enterprise-design/">created an environment</a> for them to do their best work, and touched every aspect of the product. I’ve been fortunate to play a part in helping the company scale through several stages of growth.</p>
+              <p>In 2016, I joined Signal Sciences to <a href="https://www.signalsciences.com/blog/effective-product-design/">lead product design</a>. I hired a team of talented designers, <a href="https://building.signalsciences.com/enterprise-design/">created an environment</a> for them to do their best work, and touched every aspect of the product. I was fortunate to play a part in helping the company scale through several stages of growth, up through being <a href="https://techcrunch.com/2020/08/27/la-gets-a-big-saas-exit-as-fastly-nabs-the-culver-city-based-signal-sciences-for-775m/">acquired by Fastly</a>.</p>
             </Text>
           </Box>
         </Grid>
@@ -181,7 +181,7 @@ const SigSciPage = ({ data }) => (
           maxWidth: "608px",
         }}>
         <Text sx={{ variant: "texts.cardText"}}>
-          <p>In my first two years, I redesigned and simplified Signal Sciences' self service rule building experience. Rules are composed of complex combinations of conditions and actions (image a Russian nesting doll of if-then statements), and the existing experience was incomplete and incoherent.</p>
+          <p>In my first two years, I redesigned and simplified Signal Sciences' rule building experience. Rules are composed of complex combinations of conditions and actions (imagine a Russian nesting doll of if-then statements), and the existing experience was incomplete and incoherent.</p>
           <p>I took a systems thinking approach to simplify the underling elements and interconnections that make up the feature. I also designed the rule builder interface, solving complex interaction design and UI state problems in the process.</p>
         </Text>
       </Container>

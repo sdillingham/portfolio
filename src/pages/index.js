@@ -128,7 +128,46 @@ const IndexPage = ({ data }) => {
                       letterSpacing: `extrawide`,
                       textTransform: `uppercase`,
                     }}>
-                    2016 - present
+                    2020 - present
+                  </Text>
+                  <Heading as='h2'>
+                    <Link 
+                      href='/work/honey/'
+                      sx={{
+                        color: `grays.8`,
+                        fontFamily: `serif`,
+                        fontSize: 4,
+                        fontWeight: `normal`,
+                        lineHeight: `comfortable`,
+                        mb: 0,
+                      }}>
+                      Honey / PayPal
+                    </Link>
+                  </Heading>
+                  <Text
+                    as='p'
+                    sx={{
+                      color: `grays.4`,
+                      fontFamily: `sans`,
+                      fontSize: 1,
+                      lineHeight: `comfortable`,
+                    }}>
+                    I lead a team of 15 product designers responsible for global online shopping across Honey and PayPal products.
+                  </Text>
+                </Box>
+                <Box
+                  mb={4}>
+                  <Text
+                    as='summary'
+                    sx={{
+                      color: `slates.2`,
+                      fontFamily: `mono`,
+                      fontSize: 0,
+                      fontWeight: `medium`,
+                      letterSpacing: `extrawide`,
+                      textTransform: `uppercase`,
+                    }}>
+                    2016 - 2020
                   </Text>
                   <Heading as='h2'>
                     <Link 
@@ -152,7 +191,7 @@ const IndexPage = ({ data }) => {
                       fontSize: 1,
                       lineHeight: `comfortable`,
                     }}>
-                    I'm currently Head of Design at Signal Sciences, where we help companies protect their applications and data against hackers and attacks.
+                    Signal Sciences helps companies protect their applications against attacks. As Head of Design, I helped the startup scale through several stages of growth up through acquisition.
                   </Text>
                 </Box>
                 <Box mb={0}>
@@ -191,7 +230,7 @@ const IndexPage = ({ data }) => {
                       lineHeight: `comfortable`,
                       mb: 0,
                     }}>
-                    As  Director of UX for American Public Media and KPCC, I led design and engineering. I helped define product strategy, and shipped flagship products and award winning editorial projects.
+                    As Director of UX for American Public Media and KPCC, I led design and engineering. I helped define product strategy, and shipped flagship products and award winning editorial projects.
                   </Text>
                 </Box>
               </Box>

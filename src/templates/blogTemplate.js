@@ -123,7 +123,7 @@ export default function Template({
             }
             .postContent p, 
             .postContent li {
-              font-size: 19px;
+              font-size: 20px;
               line-height: 28px;
               margin-bottom: 28px;
             }
