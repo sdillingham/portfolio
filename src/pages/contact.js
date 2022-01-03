@@ -2,11 +2,11 @@ import React from "react"
 import { Box, Button, Container, Heading, Input, Label, Text, Textarea } from "theme-ui"
 
 import Layout from "components/layout"
-import SEO from "components/seo"
+import Seo from "components/seo"
 
 const ContactPage = () => (
   <Layout>
-    <SEO title="Contact Me" description="Drop me a line and say hi! I love to chat about design and new opportunities." />
+    <Seo title="Contact Me" description="Drop me a line and say hi! I love to chat about design and new opportunities." />
     <Container
       sx={{
         maxWidth: "1300px",

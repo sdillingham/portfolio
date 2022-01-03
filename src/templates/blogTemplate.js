@@ -5,7 +5,7 @@ import { graphql } from "gatsby"
 
 import Layout from "components/layout"
 import WritingFooter from "components/writingFooter"
-import SEO from "components/seo"
+import Seo from "components/seo"
 
 
 export default function Template({
@@ -15,7 +15,7 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
-      <SEO title={frontmatter.title} />
+      <Seo title={frontmatter.title} />
       <Global
         styles={css`
           .postContent h2 {

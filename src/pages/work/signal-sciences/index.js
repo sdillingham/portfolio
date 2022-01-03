@@ -1,17 +1,18 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Grid, Heading, Image, Link, Text } from "theme-ui"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
+import { graphql } from "gatsby"
 import consoleAgent from "images/signal-sciences/console-agent.png"
 import consoleEvent from "images/signal-sciences/console-event.png"
 import consoleRules from "images/signal-sciences/console-rules.png"
 
 import Layout from "components/layout"
 import WorkFooter from "components/workFooter"
-import SEO from "components/seo"
+import Seo from "components/seo"
 
 const SigSciPage = ({ data }) => (
   <Layout>
-    <SEO title="Signal Sciences" description="A case study: making the world’s best web security technology accessible to every business." />
+    <Seo title="Signal Sciences" description="A case study: making the world’s best web security technology accessible to every business." />
     <Box
       sx={{
         backgroundColor: "grays.6",
@@ -130,13 +131,13 @@ const SigSciPage = ({ data }) => (
               sx={{ color: "grays.4", mb: 1, ml: [0, 3, 3], variant: "texts.metadata" }}>
               Workspace Dashboard
             </Text>
-            <Img
-              fluid={data.workspace.childImageSharp.fluid}
+            <GatsbyImage
+              image={data.workspace.childImageSharp.gatsbyImageData}
               alt="Signal Sciences Console workspace overview"
               sx={{
                 borderColor: "grays.1",
                 variant: "images.desktopInline"
-              }}/>
+              }} />
           </Box>
         </Grid>
       </Container>
@@ -244,28 +245,24 @@ const SigSciPage = ({ data }) => (
         </Grid>
         <Grid gap={3} columns={[1, 2, 2]} sx={{ mb: [4, 6, 6] }}>
           <Box>
-            <Img
-              fluid={data.principlePragmatic.childImageSharp.fluid}
-              alt="Signal Sciences design principle: Be Pragmatic"
-              />
+            <GatsbyImage
+              image={data.principlePragmatic.childImageSharp.gatsbyImageData}
+              alt="Signal Sciences design principle: Be Pragmatic" />
           </Box>
           <Box>
-            <Img
-              fluid={data.principleVisibility.childImageSharp.fluid}
-              alt="Signal Sciences design principle: Champion Visibility"
-              />
+            <GatsbyImage
+              image={data.principleVisibility.childImageSharp.gatsbyImageData}
+              alt="Signal Sciences design principle: Champion Visibility" />
           </Box>
           <Box>
-            <Img
-              fluid={data.principleUncertainty.childImageSharp.fluid}
-              alt="Signal Sciences design principle: Reduce Uncertainty"
-              />
+            <GatsbyImage
+              image={data.principleUncertainty.childImageSharp.gatsbyImageData}
+              alt="Signal Sciences design principle: Reduce Uncertainty" />
           </Box>
           <Box>
-            <Img
-              fluid={data.principleInsights.childImageSharp.fluid}
-              alt="Signal Sciences design principle: Unlock Insights"
-              />
+            <GatsbyImage
+              image={data.principleInsights.childImageSharp.gatsbyImageData}
+              alt="Signal Sciences design principle: Unlock Insights" />
           </Box>
         </Grid>
         <Grid gap={3} columns={[12]} sx={{ mb: [4, 6, 6] }}>
@@ -290,28 +287,24 @@ const SigSciPage = ({ data }) => (
         </Grid>
         <Grid gap={3} columns={[1, 2, 2]}>
           <Box>
-            <Img
-              fluid={data.cultureBirdcall.childImageSharp.fluid}
-              alt="Ali teaches the design team bird calls"
-              />
+            <GatsbyImage
+              image={data.cultureBirdcall.childImageSharp.gatsbyImageData}
+              alt="Ali teaches the design team bird calls" />
           </Box>
           <Box>
-            <Img
-              fluid={data.cultureThrowing.childImageSharp.fluid}
-              alt="The design team learns wheel throwing at POT LA"
-              />
+            <GatsbyImage
+              image={data.cultureThrowing.childImageSharp.gatsbyImageData}
+              alt="The design team learns wheel throwing at POT LA" />
           </Box>
           <Box>
-            <Img
-              fluid={data.cultureArchery.childImageSharp.fluid}
-              alt="The design team learns archery in case anyone wants the logo bigger"
-              />
+            <GatsbyImage
+              image={data.cultureArchery.childImageSharp.gatsbyImageData}
+              alt="The design team learns archery in case anyone wants the logo bigger" />
           </Box>
           <Box>
-            <Img
-              fluid={data.cultureMatching.childImageSharp.fluid}
-              alt="The one day I wasn't in the office and everyone on the team accidentally dressed the same"
-              />
+            <GatsbyImage
+              image={data.cultureMatching.childImageSharp.gatsbyImageData}
+              alt="The one day I wasn't in the office and everyone on the team accidentally dressed the same" />
           </Box>
         </Grid>
       </Container>
@@ -353,10 +346,9 @@ const SigSciPage = ({ data }) => (
             sx={{
               gridColumn: "1 / 13",
             }}>
-            <Img
-              fluid={data.designSystems.childImageSharp.fluid}
-              alt="Signal Sciences' component library artboards"
-              />
+            <GatsbyImage
+              image={data.designSystems.childImageSharp.gatsbyImageData}
+              alt="Signal Sciences' component library artboards" />
           </Box>
         </Grid>
       </Container>
@@ -369,77 +361,70 @@ const SigSciPage = ({ data }) => (
 
 export default SigSciPage
 
-export const pageQuery = graphql`
-  query sigsciPageQuery {
-    workspace: file(relativePath: { eq: "signal-sciences/console-workspace.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    principleInsights: file(relativePath: { eq: "signal-sciences/principle-insights.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    principlePragmatic: file(relativePath: { eq: "signal-sciences/principle-pragmatic.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    principleUncertainty: file(relativePath: { eq: "signal-sciences/principle-uncertainty.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    principleVisibility: file(relativePath: { eq: "signal-sciences/principle-visibility.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    cultureArchery: file(relativePath: { eq: "signal-sciences/culture-archery.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    cultureBirdcall: file(relativePath: { eq: "signal-sciences/culture-birdcall.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    cultureMatching: file(relativePath: { eq: "signal-sciences/culture-matching.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    cultureThrowing: file(relativePath: { eq: "signal-sciences/culture-throwing.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    designSystems: file(relativePath: { eq: "signal-sciences/design-systems.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+export const pageQuery = graphql`query sigsciPageQuery {
+  workspace: file(relativePath: {eq: "signal-sciences/console-workspace.png"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
     }
   }
+  principleInsights: file(
+    relativePath: {eq: "signal-sciences/principle-insights.jpg"}
+  ) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
+    }
+  }
+  principlePragmatic: file(
+    relativePath: {eq: "signal-sciences/principle-pragmatic.jpg"}
+  ) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
+    }
+  }
+  principleUncertainty: file(
+    relativePath: {eq: "signal-sciences/principle-uncertainty.jpg"}
+  ) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
+    }
+  }
+  principleVisibility: file(
+    relativePath: {eq: "signal-sciences/principle-visibility.jpg"}
+  ) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
+    }
+  }
+  cultureArchery: file(relativePath: {eq: "signal-sciences/culture-archery.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
+    }
+  }
+  cultureBirdcall: file(
+    relativePath: {eq: "signal-sciences/culture-birdcall.jpg"}
+  ) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
+    }
+  }
+  cultureMatching: file(
+    relativePath: {eq: "signal-sciences/culture-matching.jpg"}
+  ) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
+    }
+  }
+  cultureThrowing: file(
+    relativePath: {eq: "signal-sciences/culture-throwing.jpg"}
+  ) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
+    }
+  }
+  designSystems: file(relativePath: {eq: "signal-sciences/design-systems.png"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
+    }
+  }
+}
 `

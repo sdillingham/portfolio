@@ -3,11 +3,11 @@ import { jsx, Box, Container, Grid, Heading, Link, Text } from "theme-ui"
 
 import Layout from "components/layout"
 import WorkFooter from "components/workFooter"
-import SEO from "components/seo"
+import Seo from "components/seo"
 
 const HoneyPage = ({ data }) => (
   <Layout>
-    <SEO title="Honey (a PayPal company)" description="Helping to create the smartest, most valuable, and most trusted assistant people turn to every time they shop online." />
+    <Seo title="Honey (a PayPal company)" description="Helping to create the smartest, most valuable, and most trusted assistant people turn to every time they shop online." />
     <Box
       sx={{
         backgroundColor: "grays.6",

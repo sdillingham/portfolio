@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { Box, Container, Grid, Heading, Link, Text } from "theme-ui"
 
 import Layout from "components/layout"
-import SEO from "components/seo"
+import Seo from "components/seo"
 
 const WritingPage = ({ data }) => {
   const articles = data.allMarkdownRemark.edges
@@ -17,7 +17,7 @@ const WritingPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Writing" description="The personal website of Sean Dillingham" />
+      <Seo title="Writing" description="The personal website of Sean Dillingham" />
       <Container
         sx={{
           maxWidth: "1300px",

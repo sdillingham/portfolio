@@ -2,11 +2,11 @@ import React from "react"
 import { Container, Heading, Text } from "theme-ui"
 
 import Layout from "components/layout"
-import SEO from "components/seo"
+import Seo from "components/seo"
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not Found" description="Sorry, we can’t seem to find this page." />
+    <Seo title="404: Not Found" description="Sorry, we can’t seem to find this page." />
     <Container
       sx={{
         maxWidth: "1300px",

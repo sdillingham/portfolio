@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Grid, Heading, Image, Text } from "theme-ui"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
+import { graphql } from "gatsby"
 import { Global, css } from '@emotion/core'
 import outpostComments from "images/outpost/comments.jpg"
 import outpostContentbot from "images/outpost/contentbot.jpg"
@@ -10,11 +11,11 @@ import outpostEditor from "images/outpost/editor.mp4"
 import Layout from "components/layout"
 import WorkFooter from "components/workFooter"
 import Video from "components/video"
-import SEO from "components/seo"
+import Seo from "components/seo"
 
 const OutpostPage = ({ data }) => (
   <Layout>
-    <SEO title="Outpost CMS" description="A case study: Reimagining KPCC's publishing system for the needs of a modern newsroom." />
+    <Seo title="Outpost CMS" description="A case study: Reimagining KPCC's publishing system for the needs of a modern newsroom." />
     <Global
       styles={css`
         @media screen and (max-width: 767px) {
@@ -142,13 +143,13 @@ const OutpostPage = ({ data }) => (
               sx={{ color: "grays.4", mb: 1, ml: [0, 3, 3], variant: "texts.metadata" }}>
               Article Editor
             </Text>
-            <Img
-              fluid={data.dashboard.childImageSharp.fluid}
+            <GatsbyImage
+              image={data.dashboard.childImageSharp.gatsbyImageData}
               alt="Outpost CMS artivle editor view"
               sx={{
                 borderColor: "grays.1",
                 variant: "images.desktopInline"
-              }}/>
+              }} />
           </Box>
         </Grid>
       </Container>
@@ -274,14 +275,11 @@ const OutpostPage = ({ data }) => (
 
 export default OutpostPage
 
-export const pageQuery = graphql`
-  query outpostPageQuery {
-    dashboard: file(relativePath: { eq: "outpost/dashboard.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+export const pageQuery = graphql`query outpostPageQuery {
+  dashboard: file(relativePath: {eq: "outpost/dashboard.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
     }
   }
+}
 `

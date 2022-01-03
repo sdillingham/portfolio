@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Grid, Heading, Image, Text } from "theme-ui"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
+import { graphql } from "gatsby"
 import { Global, css } from '@emotion/core'
 import iphoneLive from "images/kpcc-iphone/iphone-live.jpg"
 import iphoneSegment from "images/kpcc-iphone/iphone-segment.jpg"
@@ -26,11 +27,11 @@ import posterSwipe from "images/kpcc-iphone/iphone-skip-poster.jpg"
 import Layout from "components/layout"
 import WorkFooter from "components/workFooter"
 import VideoMobile from "components/videoMobile"
-import SEO from "components/seo"
+import Seo from "components/seo"
 
 const iphonePage = ({ data }) => (
   <Layout>
-    <SEO title="KPCC for iPhone" description="A case study: designing new ways for Angelinos to listen to the public radio they love." />
+    <Seo title="KPCC for iPhone" description="A case study: designing new ways for Angelinos to listen to the public radio they love." />
     <Global
       styles={css`
         @media screen and (max-width: 767px) {
@@ -141,10 +142,9 @@ const iphonePage = ({ data }) => (
               sx={{ color: "grays.4", mb: 1, variant: "texts.metadata" }}>
               User Journey Map - Casual listening
             </Text>
-            <Img
-              fluid={data.iphoneMap.childImageSharp.fluid}
-              alt="KPCC iPhone user journey map"
-              />
+            <GatsbyImage
+              image={data.iphoneMap.childImageSharp.gatsbyImageData}
+              alt="KPCC iPhone user journey map" />
           </Box>
         </Grid>
       </Container>
@@ -546,14 +546,11 @@ const iphonePage = ({ data }) => (
 
 export default iphonePage
 
-export const pageQuery = graphql`
-  query iPhonePageQuery {
-    iphoneMap: file(relativePath: { eq: "kpcc-iphone/iphone-map.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+export const pageQuery = graphql`query iPhonePageQuery {
+  iphoneMap: file(relativePath: {eq: "kpcc-iphone/iphone-map.png"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
     }
   }
+}
 `
