@@ -67,6 +67,11 @@ const theme = {
       paddingBottom: 2,
     },
   },
+  text: {
+    default: {
+      display: 'block',
+    },
+  },
   texts: {
     cardText: {
       color: "grays.4",
